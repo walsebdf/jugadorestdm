@@ -1,0 +1,180 @@
+/*Aplica a todo*/
+$acolor: rgb(161, 47, 255);
+$bcolor: rgb(34, 159, 213);
+$ccolor: rgba(221, 15, 15);
+$ctcolor:rgba(221, 15, 15, 0.419);
+$dcolor: green;
+$dtcolor: rgba(0, 128, 0, 0.419);
+$ecolor: white;
+$etcolor: rgba(255, 255, 255, 0.419);
+$fcolor: black;
+$bkgcolor: rgba(227, 227, 183);
+$afont: 'Righteous';
+$bfont: 'Satisfy';
+$cfont: 'Courgette';
+$dfont: 'Mate SC';
+$efont: 'Calligraffitti';
+$ffont: 'Montez';
+$gfont: 'Bilbo Swash Caps';
+$hfont: 'Akronim';
+$ifont: 'Condiment';
+$afontsize: 60px;
+$abfontsize: 55px;
+$bfontsize: 50px;
+$bcfontsize: 45px;
+$cfontsize: 40px;
+$cdfontsize: 35px;
+$dfontsize: 30px;
+$defontsize: 25px;
+$efontsize: 20px;
+$effontsize: 16px;
+$ffontsize: 12px;
+
+body{
+    background-image: url(../images/gran_logo_corazon_oscuro.jpg);
+    background-size: 100%;
+
+    header{
+        background: linear-gradient($acolor, $etcolor);
+        text-align: center;
+        box-shadow: 10px 5px 15px $ecolor;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transition: all 3s;
+    
+        &:hover {
+            background: linear-gradient($ecolor, $ctcolor);
+        }
+
+        .nav-item{
+            font-family: $dfont;
+            font-size: $defontsize;
+            font-weight: 600;
+        }
+    }
+
+    #contenidoPagina{
+
+        #titulodePagina{
+            display: flex;
+            justify-content: space-around;
+            font-family: $ifont;
+            font-size: $afontsize;
+            color: $ecolor;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #encabezadoIndex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+
+            
+            .banner{
+                img{
+                    width: 100%;
+                }
+            }
+
+            #quienesSomos{
+                margin: 20px;
+                .encabezadoIndexTitulo{
+                    font-family: $ifont;
+                    font-size: $cfontsize;
+                    color: $ccolor;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    text-align: center;                    
+                    }
+                    
+                    p{
+                        font-family: $afont;
+                        font-size: $efontsize;
+                        color: $ecolor;
+                    }
+            }
+
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: $dtcolor;
+
+        .redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .datosContacto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlaces{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+}
+
+/*Pagina de SL B*/
+
+.escudosLiga{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid $acolor;
+    img{
+        width: 7%;
+        margin-bottom: 20px;
+    }
+}
+
+.indicadorFecha{
+    color: $ccolor;
+    font-family: $efont;
+    font-size: $cdfontsize;
+    font-weight: bold;
+    border-bottom: 5px dotted $ccolor;
+    text-align: center;
+    margin: 15px;
+}
+
+.detalleFecha{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+
+    .escudoRdo{
+        img{
+            width: 50%;
+        }
+        
+    }
+    th{
+        color: $acolor;
+        font-family: $afont;
+        font-size: $defontsize;
+    }
+    td{
+        color: $ecolor;
+        font-family: $afont;
+    }
+}
+
+
+
+
