@@ -208,7 +208,7 @@ body {
                 color: $ecolor;
                 text-align: center;
 
-                .mantiene{
+                .mantiene {
                     background-color: $gcolor;
                 }
 
@@ -223,6 +223,7 @@ body {
                         width: 10%;
                         padding-right: 10px;
                     }
+
                     text-align: start;
                 }
             }
@@ -231,7 +232,7 @@ body {
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .paginaSL {
 
         .escudosLiga {
@@ -239,38 +240,39 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             border-bottom: 1px solid $acolor;
-    
+
             img {
                 width: 7%;
                 margin-bottom: 20px;
             }
         }
-    
+
         .detalleFecha {
-    
-            .escudoRdo {
-                img {
-                    display: none;
+            tr {
+                .escudoRdo {
+                    img {
+                        display: none;
+                    }
                 }
             }
-
         }
-    
+
         #tablaPosSl {
-    
+
             .tablaPosSl {
 
                 tr {
-      
+
                     .escudoRdo {
                         img {
                             display: none;
                         }
+
                         text-align: start;
                     }
                 }
             }
         }
-    
+
     }
 }

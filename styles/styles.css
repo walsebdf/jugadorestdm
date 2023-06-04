@@ -156,4 +156,26 @@ body footer .enlaces {
   padding-right: 10px;
 }
 
+@media screen and (max-width: 991px) {
+  .paginaSL .escudosLiga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgb(161, 47, 255);
+  }
+  .paginaSL .escudosLiga img {
+    width: 7%;
+    margin-bottom: 20px;
+  }
+  .paginaSL .detalleFecha tr .escudoRdo img {
+    display: none;
+  }
+  .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
+    text-align: start;
+  }
+  .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
