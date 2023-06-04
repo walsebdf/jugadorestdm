@@ -2,12 +2,13 @@
 $acolor: rgb(161, 47, 255);
 $bcolor: rgb(34, 159, 213);
 $ccolor: rgba(221, 15, 15);
-$ctcolor:rgba(221, 15, 15, 0.419);
+$ctcolor: rgba(221, 15, 15, 0.419);
 $dcolor: green;
 $dtcolor: rgba(0, 128, 0, 0.419);
 $ecolor: white;
 $etcolor: rgba(255, 255, 255, 0.419);
 $fcolor: black;
+$gcolor: rgb(124, 124, 34);
 $bkgcolor: rgba(227, 227, 183);
 $afont: 'Righteous';
 $bfont: 'Satisfy';
@@ -30,11 +31,11 @@ $efontsize: 20px;
 $effontsize: 16px;
 $ffontsize: 12px;
 
-body{
+body {
     background-image: url(../images/gran_logo_corazon_oscuro.jpg);
     background-size: 100%;
 
-    header{
+    header {
         background: linear-gradient($acolor, $etcolor);
         text-align: center;
         box-shadow: 10px 5px 15px $ecolor;
@@ -43,21 +44,21 @@ body{
         justify-content: space-between;
         flex-wrap: wrap;
         transition: all 3s;
-    
+
         &:hover {
             background: linear-gradient($ecolor, $ctcolor);
         }
 
-        .nav-item{
+        .nav-item {
             font-family: $dfont;
             font-size: $defontsize;
             font-weight: 600;
         }
     }
 
-    #contenidoPagina{
+    #contenidoPagina {
 
-        #titulodePagina{
+        #titulodePagina {
             display: flex;
             justify-content: space-around;
             font-family: $ifont;
@@ -67,59 +68,60 @@ body{
             padding-bottom: 20px;
         }
 
-        #encabezadoIndex{
+        #encabezadoIndex {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             width: 100%;
 
-            
-            .banner{
-                img{
+
+            .banner {
+                img {
                     width: 100%;
                 }
             }
 
-            #quienesSomos{
+            #quienesSomos {
                 margin: 20px;
-                .encabezadoIndexTitulo{
+
+                .encabezadoIndexTitulo {
                     font-family: $ifont;
                     font-size: $cfontsize;
                     color: $ccolor;
                     padding-top: 20px;
                     padding-bottom: 20px;
-                    text-align: center;                    
-                    }
-                    
-                    p{
-                        font-family: $afont;
-                        font-size: $efontsize;
-                        color: $ecolor;
-                    }
+                    text-align: center;
+                }
+
+                p {
+                    font-family: $afont;
+                    font-size: $efontsize;
+                    color: $ecolor;
+                }
             }
 
         }
     }
 
-    footer{
+    footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         background: $dtcolor;
 
-        .redes{
+        .redes {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .datosContacto{
+        .datosContacto {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .enlaces{
+        .enlaces {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -129,52 +131,102 @@ body{
 
 }
 
-/*Pagina de SL B*/
+/*Paginas de SL*/
 
-.escudosLiga{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-bottom: 1px solid $acolor;
-    img{
-        width: 7%;
-        margin-bottom: 20px;
-    }
-}
+.paginaSL {
 
-.indicadorFecha{
-    color: $ccolor;
-    font-family: $efont;
-    font-size: $cdfontsize;
-    font-weight: bold;
-    border-bottom: 5px dotted $ccolor;
-    text-align: center;
-    margin: 15px;
-}
 
-.detalleFecha{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
+    .escudosLiga {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid $acolor;
 
-    .escudoRdo{
-        img{
-            width: 50%;
+        img {
+            width: 7%;
+            margin-bottom: 20px;
         }
-        
     }
-    th{
-        color: $acolor;
-        font-family: $afont;
-        font-size: $defontsize;
+
+    .indicadorFecha {
+        color: $ccolor;
+        font-family: $efont;
+        font-size: $cdfontsize;
+        font-weight: bold;
+        border-bottom: 5px dotted $ccolor;
+        text-align: center;
+        margin: 15px;
     }
-    td{
-        color: $ecolor;
-        font-family: $afont;
+
+    .detalleFecha {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+        border-bottom: 3px solid $ccolor;
+
+        .escudoRdo {
+            img {
+                width: 50%;
+            }
+        }
+
+        th {
+            color: $acolor;
+            font-family: $afont;
+            font-size: $defontsize;
+        }
+
+        td {
+            color: $ecolor;
+            font-family: $afont;
+        }
     }
+
+    .tituloTablaPosSl {
+        color: $bcolor;
+        font-family: $efont;
+        font-size: $cdfontsize;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px;
+    }
+
+    #tablaPosSl {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .tablaPosSl {
+            width: 80%;
+            margin: 20px;
+
+            tr {
+                font-family: $dfont;
+                font-size: $defontsize;
+                color: $ecolor;
+                text-align: center;
+
+                .mantiene{
+                    background-color: $gcolor;
+                }
+
+                td {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border: 1px solid $ecolor
+                }
+
+                .escudoRdo {
+                    img {
+                        width: 10%;
+                        padding-right: 10px;
+                    }
+                    text-align: start;
+                }
+            }
+        }
+    }
+
 }
-
-
-
-

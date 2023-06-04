@@ -77,19 +77,18 @@ body footer .enlaces {
   align-items: center;
 }
 
-/*Pagina de SL B*/
-.escudosLiga {
+/*Paginas de SL*/
+.paginaSL .escudosLiga {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   border-bottom: 1px solid rgb(161, 47, 255);
 }
-.escudosLiga img {
+.paginaSL .escudosLiga img {
   width: 7%;
   margin-bottom: 20px;
 }
-
-.indicadorFecha {
+.paginaSL .indicadorFecha {
   color: rgb(221, 15, 15);
   font-family: "Calligraffitti";
   font-size: 35px;
@@ -98,24 +97,63 @@ body footer .enlaces {
   text-align: center;
   margin: 15px;
 }
-
-.detalleFecha {
+.paginaSL .detalleFecha {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 20px;
+  border-bottom: 3px solid rgb(221, 15, 15);
 }
-.detalleFecha .escudoRdo img {
+.paginaSL .detalleFecha .escudoRdo img {
   width: 50%;
 }
-.detalleFecha th {
+.paginaSL .detalleFecha th {
   color: rgb(161, 47, 255);
   font-family: "Righteous";
   font-size: 25px;
 }
-.detalleFecha td {
+.paginaSL .detalleFecha td {
   color: white;
   font-family: "Righteous";
+}
+.paginaSL .tituloTablaPosSl {
+  color: rgb(34, 159, 213);
+  font-family: "Calligraffitti";
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+.paginaSL #tablaPosSl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.paginaSL #tablaPosSl .tablaPosSl {
+  width: 80%;
+  margin: 20px;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr {
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .mantiene {
+  background-color: rgb(124, 124, 34);
+}
+.paginaSL #tablaPosSl .tablaPosSl tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
+  text-align: start;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
+  width: 10%;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
