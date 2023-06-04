@@ -194,10 +194,12 @@ body {
 
     #tablaPosSl {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
+        width: 90%;
+        
         .tablaPosSl {
             width: 80%;
             margin: 20px;

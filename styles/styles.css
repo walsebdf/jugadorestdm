@@ -126,9 +126,11 @@ body footer .enlaces {
 }
 .paginaSL #tablaPosSl {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 90%;
 }
 .paginaSL #tablaPosSl .tablaPosSl {
   width: 80%;
