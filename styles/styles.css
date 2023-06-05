@@ -143,7 +143,13 @@ body footer .enlaces {
   text-align: center;
 }
 .paginaSL #tablaPosSl .tablaPosSl tr .mantiene {
+  background-color: green;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .repechaje {
   background-color: rgb(124, 124, 34);
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .descenso {
+  background-color: rgb(221, 15, 15);
 }
 .paginaSL #tablaPosSl .tablaPosSl tr td {
   padding-left: 10px;
@@ -156,6 +162,29 @@ body footer .enlaces {
 .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
   width: 10%;
   padding-right: 10px;
+}
+.paginaSL #fixtureSl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.paginaSL #fixtureSl h2 {
+  font-family: "Mate SC";
+  color: orange;
+  font-weight: bold;
+}
+.paginaSL #fixtureSl .fixtureSl {
+  width: 80%;
+  margin: 20px;
+}
+.paginaSL #fixtureSl .fixtureSl tr {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {

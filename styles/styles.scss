@@ -9,6 +9,7 @@ $ecolor: white;
 $etcolor: rgba(255, 255, 255, 0.419);
 $fcolor: black;
 $gcolor: rgb(124, 124, 34);
+$hcolor: orange;
 $bkgcolor: rgba(227, 227, 183);
 $afont: 'Righteous';
 $bfont: 'Satisfy';
@@ -211,7 +212,15 @@ body {
                 text-align: center;
 
                 .mantiene {
+                    background-color: $dcolor;
+                }
+
+                .repechaje{
                     background-color: $gcolor;
+                }
+
+                .descenso{
+                    background-color: $ccolor;
                 }
 
                 td {
@@ -232,6 +241,32 @@ body {
         }
     }
 
+    #fixtureSl {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+
+        h2{
+            font-family: $dfont;
+            color: $hcolor;
+            font-weight: bold;
+        }
+
+        .fixtureSl {
+            width: 80%;
+            margin: 20px;
+
+            tr {
+                font-family: $dfont;
+                font-size: $efontsize;
+                color: $ecolor;
+                text-align: center;
+            }
+        }    
+    }
 }
 
 @media screen and (max-width: 991px) {
