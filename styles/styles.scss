@@ -69,6 +69,16 @@ body {
             padding-bottom: 20px;
         }
 
+        #subtitulodePagina {
+            display: flex;
+            justify-content: space-around;
+            font-family: $ifont;
+            font-size: $bfontsize;
+            color: $ecolor;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
         #encabezadoIndex {
             display: flex;
             flex-direction: column;
@@ -200,7 +210,7 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 90%;
-        
+
         .tablaPosSl {
             width: 80%;
             margin: 20px;
@@ -215,11 +225,11 @@ body {
                     background-color: $dcolor;
                 }
 
-                .repechaje{
+                .repechaje {
                     background-color: $gcolor;
                 }
 
-                .descenso{
+                .descenso {
                     background-color: $ccolor;
                 }
 
@@ -249,7 +259,7 @@ body {
         align-items: center;
         width: 90%;
 
-        h2{
+        h2 {
             font-family: $dfont;
             color: $hcolor;
             font-weight: bold;
@@ -265,8 +275,101 @@ body {
                 color: $ecolor;
                 text-align: center;
             }
-        }    
+        }
     }
+}
+
+/*Paginas de SS*/
+
+.paginaRdosSS {
+
+    .playoffTitulo{
+        font-family: $ifont;
+        font-size: $bfontsize;
+        color: $ecolor;
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+    .rdosSSGeneral {
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+
+
+            .nombreGrupoSS {
+                font-family: $dfont;
+                font-size: $efontsize;
+                font-weight: bold;
+                color: $ecolor;
+                text-align: center;
+
+            }
+
+            .rdosSS {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 20px;
+
+                tr {
+
+                    font-family: $dfont;
+                    font-size: $efontsize;
+                    color: $ecolor;
+                    text-align: center;
+
+                    .nombreJugSS {
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        color: $ecolor;
+                        text-align: start;
+                    }
+
+                    .escudoRdoSS {
+                        text-align: start;
+                        font-size: $effontsize;
+
+                        img {
+                            width: 10%;
+                        }
+                    }
+
+                    .setsganadosSS {
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        font-weight: bold;
+                        color: $ccolor;
+                        text-align: center;
+                    }
+
+                    .puntosGanadosRank {
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        font-weight: bold;
+                        color: $bcolor;
+                        text-align: center;
+                    }
+
+                }
+
+                .matchSS {
+                    border-bottom: 1px solid $bcolor;
+                }
+            }
+
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 991px) {

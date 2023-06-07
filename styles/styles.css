@@ -30,6 +30,15 @@ body #contenidoPagina #titulodePagina {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+body #contenidoPagina #subtitulodePagina {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Condiment";
+  font-size: 50px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 body #contenidoPagina #encabezadoIndex {
   display: flex;
   flex-direction: column;
@@ -185,6 +194,75 @@ body footer .enlaces {
   font-size: 20px;
   color: white;
   text-align: center;
+}
+
+/*Paginas de SS*/
+.paginaRdosSS .playoffTitulo {
+  font-family: "Condiment";
+  font-size: 50px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.paginaRdosSS .rdosSSGeneral {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.paginaRdosSS .rdosSSGeneral div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.paginaRdosSS .rdosSSGeneral div .nombreGrupoSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr .nombreJugSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: start;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr .escudoRdoSS {
+  text-align: start;
+  font-size: 16px;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr .escudoRdoSS img {
+  width: 10%;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr .setsganadosSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 15, 15);
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS tr .puntosGanadosRank {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(34, 159, 213);
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral div .rdosSS .matchSS {
+  border-bottom: 1px solid rgb(34, 159, 213);
 }
 
 @media screen and (max-width: 991px) {
