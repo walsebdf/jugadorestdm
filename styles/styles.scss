@@ -283,13 +283,13 @@ body {
 
 .paginaRdosSS {
 
-    .playoffTitulo{
+    .playoffTitulo {
         font-family: $ifont;
         font-size: $bfontsize;
         color: $ecolor;
         padding-top: 20px;
         padding-bottom: 20px;
-}
+    }
 
     .rdosSSGeneral {
 
@@ -297,7 +297,7 @@ body {
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        
+
         div {
             width: 50%;
             display: flex;
@@ -358,7 +358,6 @@ body {
                         color: $bcolor;
                         text-align: center;
                     }
-
                 }
 
                 .matchSS {
