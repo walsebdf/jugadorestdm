@@ -298,7 +298,14 @@ body {
         flex-wrap: wrap;
         width: 100%;
 
-        div {
+        .rdosEspecialesSS{
+            color: $ecolor;
+            h3{
+                color: $acolor;
+            }
+        }
+
+        .cardRdoSS {
             width: 50%;
             display: flex;
             flex-direction: column;

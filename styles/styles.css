@@ -210,58 +210,64 @@ body footer .enlaces {
   flex-wrap: wrap;
   width: 100%;
 }
-.paginaRdosSS .rdosSSGeneral div {
+.paginaRdosSS .rdosSSGeneral .rdosEspecialesSS {
+  color: white;
+}
+.paginaRdosSS .rdosSSGeneral .rdosEspecialesSS h3 {
+  color: rgb(161, 47, 255);
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.paginaRdosSS .rdosSSGeneral div .nombreGrupoSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .nombreGrupoSS {
   font-family: "Mate SC";
   font-size: 20px;
   font-weight: bold;
   color: white;
   text-align: center;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr {
   font-family: "Mate SC";
   font-size: 20px;
   color: white;
   text-align: center;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr .nombreJugSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .nombreJugSS {
   font-family: "Mate SC";
   font-size: 20px;
   color: white;
   text-align: start;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr .escudoRdoSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS {
   text-align: start;
   font-size: 16px;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr .escudoRdoSS img {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS img {
   width: 10%;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr .setsganadosSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .setsganadosSS {
   font-family: "Mate SC";
   font-size: 20px;
   font-weight: bold;
   color: rgb(221, 15, 15);
   text-align: center;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS tr .puntosGanadosRank {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .puntosGanadosRank {
   font-family: "Mate SC";
   font-size: 20px;
   font-weight: bold;
   color: rgb(34, 159, 213);
   text-align: center;
 }
-.paginaRdosSS .rdosSSGeneral div .rdosSS .matchSS {
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS .matchSS {
   border-bottom: 1px solid rgb(34, 159, 213);
 }
 
