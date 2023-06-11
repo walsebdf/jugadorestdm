@@ -296,6 +296,7 @@ body {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
 
         .rdosEspecialesSS{
@@ -306,10 +307,9 @@ body {
         }
 
         .cardRdoSS {
-            width: 50%;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
-
 
 
             .nombreGrupoSS {
