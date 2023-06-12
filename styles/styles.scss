@@ -59,6 +59,12 @@ body {
 
     #contenidoPagina {
 
+        .banner {
+            img {
+                width: 100%;
+            }
+        }
+
         #titulodePagina {
             display: flex;
             justify-content: space-around;
@@ -81,19 +87,40 @@ body {
 
         #encabezadoIndex {
             display: flex;
-            flex-direction: column;
             justify-content: space-around;
             width: 100%;
 
+            .novedadesPagPrinc{
+                display: flex;
+                flex-direction: column;
 
-            .banner {
-                img {
-                    width: 100%;
+                a{
+                    text-decoration: none;
                 }
+
+                .novedadesPagPrincCard{
+                    border: 1px solid $bcolor;
+                    margin: 20px;
+                }
+
+                .novedadesPagPrincTitulo{
+                    text-align: center;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;                    
+                }
+
+                p{
+                    text-align: center;
+                    color: $ecolor;
+                    font-size: $effontsize;
+                }
+
             }
 
             #quienesSomos {
                 margin: 20px;
+                width: 50%;
 
                 .encabezadoIndexTitulo {
                     font-family: $ifont;
@@ -112,6 +139,44 @@ body {
             }
 
         }
+        .rdosPaginaSS{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+
+            .subtituloRdosSS{
+                font-family: $afont;
+                color: $hcolor;
+                font-size: $cfontsize;
+                text-align: center;
+            }
+
+            .rdosPaginaSSCat{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 20px;
+
+                a{
+                    display: flex;
+                    justify-content: space-around;
+                    justify-items: center;
+                    width: 50%;
+    
+                    img{
+                        width: 20%;
+                        align-content: center;
+                        margin: 20px;
+                    }
+                    
+                }
+            }
+
+
+        }
+        
     }
 
     footer {

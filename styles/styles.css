@@ -21,6 +21,9 @@ body header .nav-item {
   font-size: 25px;
   font-weight: 600;
 }
+body #contenidoPagina .banner img {
+  width: 100%;
+}
 body #contenidoPagina #titulodePagina {
   display: flex;
   justify-content: space-around;
@@ -41,15 +44,34 @@ body #contenidoPagina #subtitulodePagina {
 }
 body #contenidoPagina #encabezadoIndex {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
-body #contenidoPagina #encabezadoIndex .banner img {
-  width: 100%;
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
+  display: flex;
+  flex-direction: column;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a {
+  text-decoration: none;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincCard {
+  border: 1px solid rgb(34, 159, 213);
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincTitulo {
+  text-align: center;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
+  text-align: center;
+  color: white;
+  font-size: 16px;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos {
   margin: 20px;
+  width: 50%;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos .encabezadoIndexTitulo {
   font-family: "Condiment";
@@ -63,6 +85,35 @@ body #contenidoPagina #encabezadoIndex #quienesSomos p {
   font-family: "Righteous";
   font-size: 20px;
   color: white;
+}
+body #contenidoPagina .rdosPaginaSS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #contenidoPagina .rdosPaginaSS .subtituloRdosSS {
+  font-family: "Righteous";
+  color: orange;
+  font-size: 40px;
+  text-align: center;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  width: 50%;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
+  width: 20%;
+  align-content: center;
+  margin: 20px;
 }
 body footer {
   display: flex;
