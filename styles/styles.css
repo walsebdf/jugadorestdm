@@ -42,9 +42,20 @@ body #contenidoPagina #subtitulodePagina {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-body #contenidoPagina #encabezadoIndex {
+body #contenidoPagina #subtituloBdePagina {
   display: flex;
   justify-content: space-around;
+  font-family: "Righteous";
+  font-size: 20px;
+  color: orange;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #contenidoPagina #encabezadoIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
@@ -56,6 +67,20 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a {
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincCard {
   border: 1px solid rgb(34, 159, 213);
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex a {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex a img {
+  width: 60%;
   margin: 20px;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincTitulo {
@@ -71,7 +96,6 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos {
   margin: 20px;
-  width: 50%;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos .encabezadoIndexTitulo {
   font-family: "Condiment";
@@ -111,7 +135,7 @@ body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a {
   width: 50%;
 }
 body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
-  width: 20%;
+  width: 50%;
   align-content: center;
   margin: 20px;
 }
@@ -138,6 +162,11 @@ body footer .enlaces {
 }
 
 /*Paginas de SL*/
+.paginaSL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .paginaSL .escudosLiga {
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +188,7 @@ body footer .enlaces {
 }
 .paginaSL .detalleFecha {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   margin: 20px;
   border-bottom: 3px solid rgb(221, 15, 15);
@@ -190,10 +219,13 @@ body footer .enlaces {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 99%;
+  margin: 20px;
 }
 .paginaSL #tablaPosSl .tablaPosSl {
-  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   margin: 20px;
 }
 .paginaSL #tablaPosSl .tablaPosSl tr {
