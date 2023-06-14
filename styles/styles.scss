@@ -354,6 +354,27 @@ body {
                     text-align: start;
                 }
             }
+
+        }
+        
+    }
+
+    #tablaPlayoffSl{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 99%;
+        margin: 20px;
+
+        .tablaPlayoffSl{
+
+            tr{
+                .borderFullLlave{
+                    border: 1px solid white;
+                }
+            }
         }
     }
 
