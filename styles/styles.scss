@@ -370,10 +370,30 @@ body {
 
         .tablaPlayoffSl{
 
+            
             tr{
+                td{
+                    width: 80px;
+                    font-family: $dfont;
+                    font-size: $defontsize;
+                    color: $ecolor;
+                }
+
                 .borderFullLlave{
+                    width: 300px;
+                    height: 30px;
                     border: 1px solid white;
                 }
+
+                .borderLeftLlave{
+                    border-left: 1px solid white;
+                }
+
+                .borderDownLlave{
+                    width: 80px;
+                    border-bottom: 1px solid white;
+                }
+
             }
         }
     }

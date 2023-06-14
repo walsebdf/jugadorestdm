@@ -255,6 +255,33 @@ body footer .enlaces {
   width: 10%;
   padding-right: 10px;
 }
+.paginaSL #tablaPlayoffSl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  margin: 20px;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr td {
+  width: 80px;
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderFullLlave {
+  width: 300px;
+  height: 30px;
+  border: 1px solid white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderLeftLlave {
+  border-left: 1px solid white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderDownLlave {
+  width: 80px;
+  border-bottom: 1px solid white;
+}
 .paginaSL #fixtureSl {
   display: flex;
   flex-wrap: wrap;
