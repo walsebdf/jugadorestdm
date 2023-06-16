@@ -1,0 +1,408 @@
+/*Aplica a todo*/
+body {
+  background-image: url(../images/gran_logo_corazon_oscuro.jpg);
+  background-size: 100%;
+}
+body header {
+  background: linear-gradient(rgb(161, 47, 255), rgba(255, 255, 255, 0.419));
+  text-align: center;
+  box-shadow: 10px 5px 15px white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: all 3s;
+}
+body header:hover {
+  background: linear-gradient(white, rgba(221, 15, 15, 0.419));
+}
+body header .nav-item {
+  font-family: "Mate SC";
+  font-size: 25px;
+  font-weight: 600;
+}
+body #contenidoPagina .banner img {
+  width: 100%;
+}
+body #contenidoPagina #titulodePagina {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Condiment";
+  font-size: 60px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #contenidoPagina #subtitulodePagina {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Condiment";
+  font-size: 50px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #contenidoPagina #subtituloBdePagina {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Righteous";
+  font-size: 20px;
+  color: orange;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #contenidoPagina #encabezadoIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
+  display: flex;
+  flex-direction: column;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a {
+  text-decoration: none;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincCard {
+  border: 1px solid rgb(34, 159, 213);
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex a {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex a img {
+  width: 60%;
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincTitulo {
+  text-align: center;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+body #contenidoPagina #encabezadoIndex #quienesSomos {
+  margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex #quienesSomos .encabezadoIndexTitulo {
+  font-family: "Condiment";
+  font-size: 40px;
+  color: rgb(221, 15, 15);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+body #contenidoPagina #encabezadoIndex #quienesSomos p {
+  font-family: "Righteous";
+  font-size: 20px;
+  color: white;
+}
+body #contenidoPagina .rdosPaginaSS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #contenidoPagina .rdosPaginaSS .subtituloRdosSS {
+  font-family: "Righteous";
+  color: orange;
+  font-size: 40px;
+  text-align: center;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  width: 50%;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
+  width: 50%;
+  align-content: center;
+  margin: 20px;
+}
+body footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: rgba(0, 128, 0, 0.419);
+}
+body footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .datosContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .enlaces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Paginas de SL*/
+.paginaSL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paginaSL .escudosLiga {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid rgb(161, 47, 255);
+}
+.paginaSL .escudosLiga img {
+  width: 7%;
+  margin-bottom: 20px;
+}
+.paginaSL .indicadorFecha {
+  color: rgb(221, 15, 15);
+  font-family: "Calligraffitti";
+  font-size: 35px;
+  font-weight: bold;
+  border-bottom: 5px dotted rgb(221, 15, 15);
+  text-align: center;
+  margin: 15px;
+}
+.paginaSL .detalleFecha {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px;
+  border-bottom: 3px solid rgb(221, 15, 15);
+}
+.paginaSL .detalleFecha .escudoRdo img {
+  width: 50%;
+}
+.paginaSL .detalleFecha th {
+  color: rgb(161, 47, 255);
+  font-family: "Righteous";
+  font-size: 25px;
+}
+.paginaSL .detalleFecha td {
+  color: white;
+  font-family: "Righteous";
+}
+.paginaSL .tituloTablaPosSl {
+  color: rgb(34, 159, 213);
+  font-family: "Calligraffitti";
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+.paginaSL #tablaPosSl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  margin: 20px;
+}
+.paginaSL #tablaPosSl .tablaPosSl {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr {
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .mantiene {
+  background-color: green;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .repechaje {
+  background-color: rgb(124, 124, 34);
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .descenso {
+  background-color: rgb(221, 15, 15);
+}
+.paginaSL #tablaPosSl .tablaPosSl tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid white;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
+  text-align: start;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
+  width: 10%;
+  padding-right: 10px;
+}
+.paginaSL #tablaPlayoffSl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  margin: 20px;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr td {
+  width: 80px;
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderFullLlave {
+  width: 300px;
+  height: 30px;
+  border: 1px solid white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderLeftLlave {
+  border-left: 1px solid white;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderDownLlave {
+  width: 80px;
+  border-bottom: 1px solid white;
+}
+.paginaSL #fixtureSl {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.paginaSL #fixtureSl h2 {
+  font-family: "Mate SC";
+  color: orange;
+  font-weight: bold;
+}
+.paginaSL #fixtureSl .fixtureSl {
+  width: 80%;
+  margin: 20px;
+}
+.paginaSL #fixtureSl .fixtureSl tr {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/*Paginas de SS*/
+.paginaRdosSS .playoffTitulo {
+  font-family: "Condiment";
+  font-size: 50px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.paginaRdosSS .rdosSSGeneral {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+}
+.paginaRdosSS .rdosSSGeneral .rdosEspecialesSS {
+  color: white;
+}
+.paginaRdosSS .rdosSSGeneral .rdosEspecialesSS h3 {
+  color: rgb(161, 47, 255);
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .nombreGrupoSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .nombreJugSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  color: white;
+  text-align: start;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS {
+  text-align: start;
+  font-size: 16px;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS img {
+  width: 10%;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .setsganadosSS {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 15, 15);
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .puntosGanadosRank {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(34, 159, 213);
+  text-align: center;
+}
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS .matchSS {
+  border-bottom: 1px solid rgb(34, 159, 213);
+}
+
+@media screen and (max-width: 991px) {
+  .paginaSL .escudosLiga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgb(161, 47, 255);
+  }
+  .paginaSL .escudosLiga img {
+    width: 7%;
+    margin-bottom: 20px;
+  }
+  .paginaSL .detalleFecha tr .escudoRdo img {
+    display: none;
+  }
+  .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
+    text-align: start;
+  }
+  .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=css.map */

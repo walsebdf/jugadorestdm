@@ -26,6 +26,7 @@ body #contenidoPagina .banner img {
 }
 body #contenidoPagina #titulodePagina {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   font-family: "Condiment";
   font-size: 60px;
@@ -305,6 +306,44 @@ body footer .enlaces {
   color: white;
   text-align: center;
 }
+.paginaSL #tablaPlayoffLde {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  margin: 20px;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde {
+  margin: 50px;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde .separacion {
+  height: 50px;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde tr td {
+  width: 80px;
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde tr .borderFullLlave {
+  width: 300px;
+  height: 30px;
+  border: 3px solid orange;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde tr .borderLeftLlave {
+  border-left: 1px solid orange;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde tr .borderDownLlave {
+  width: 80px;
+  border-bottom: 1px solid orange;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde tr .instancia {
+  font-weight: bold;
+  color: rgb(161, 47, 255);
+  text-align: center;
+}
 
 /*Paginas de SS*/
 .paginaRdosSS .playoffTitulo {
@@ -320,6 +359,7 @@ body footer .enlaces {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  align-content: center;
 }
 .paginaRdosSS .rdosSSGeneral .rdosEspecialesSS {
   color: white;
@@ -382,7 +422,107 @@ body footer .enlaces {
   border-bottom: 1px solid rgb(34, 159, 213);
 }
 
+/*pagina de LDE*/
+#menudeLde {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-around;
+}
+#menudeLde .seccion1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 45%;
+  margin: 20px;
+}
+#menudeLde .seccion1 img {
+  width: 100%;
+  margin: 20px;
+  box-shadow: 10px 15px 15px rgb(161, 47, 255);
+}
+#menudeLde .seccion1 .imagenSeleccionable {
+  display: flex;
+}
+#menudeLde .seccion1 .imagenSeleccionable .img2 {
+  width: 100%;
+  box-shadow: -10px 15px 15px rgb(161, 47, 255);
+}
+#menudeLde .seccion1 .imagenSeleccionable .img2:hover {
+  box-shadow: -10px 15px 15px orange;
+}
+#menudeLde .seccion1 .opcionesMenuLde {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Righteous";
+  font-size: 40px;
+  line-height: 100%;
+}
+#menudeLde .seccion1 .opcionesMenuLde .opciondeMenuLde {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+#menudeLde .seccion1 .opcionesMenuLde .opciondeMenuLde:hover {
+  font-size: 45px;
+  text-shadow: 5px 5px 10px orange;
+}
+#menudeLde .seccion1 .buscadorDeMesa {
+  display: flex;
+  justify-content: center;
+}
+#menudeLde .seccion1 .buscadorDeMesa iframe {
+  margin: 20px;
+  box-shadow: 10px 15px 15px rgb(34, 159, 213);
+}
+#menudeLde .seccion1 .buscadorDeMesa iframe:hover {
+  box-shadow: 10px 15px 30px orange;
+}
+
+/*pagina de TMTs*/
+#fechasFindeTMT {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#fechasFindeTMT .fechaTMT {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  width: 50%;
+}
+#fechasFindeTMT .fechaTMT .fecha {
+  width: 100%;
+  margin: 30px;
+  box-shadow: 10px 10px 15px rgba(208, 30, 196, 0.784);
+}
+#fechasFindeTMT .fechaTMT .flyersTMT {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#fechasFindeTMT .fechaTMT .flyersTMT img {
+  width: 100%;
+  margin: 20px;
+}
+
+/*------------------MQ---------------------*/
 @media screen and (max-width: 991px) {
+  #contenidoPagina #titulodePagina {
+    text-align: center;
+    font-family: "Condiment";
+    font-size: 60px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .paginaSL .escudosLiga {
     display: flex;
     flex-wrap: wrap;
@@ -401,6 +541,45 @@ body footer .enlaces {
   }
   .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo img {
     display: none;
+  }
+  /*----------Pagina de LDE--------------*/
+  #menudeLde {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: space-around;
+  }
+  #menudeLde .seccion1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 20px;
+    width: 100%;
+  }
+  #menudeLde .seccion1 .buscadorDeMesa {
+    display: flex;
+    justify-content: center;
+  }
+  #menudeLde .seccion1 .buscadorDeMesa iframe {
+    margin: 20px;
+    box-shadow: -10px 15px 15px rgb(34, 159, 213);
+  }
+  #menudeLde .seccion1 .buscadorDeMesa iframe:hover {
+    box-shadow: 10px 15px 30px orange;
+  }
+  #menudeLde .seccion1 .imagenSeleccionable {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #menudeLde .seccion1 .imagenSeleccionable .img2 {
+    width: 100%;
+    box-shadow: 10px 15px 15px rgb(161, 47, 255);
+  }
+  #menudeLde .seccion1 .imagenSeleccionable .img2:hover {
+    box-shadow: 10px 15px 15px orange;
   }
 }
 

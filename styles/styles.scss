@@ -10,6 +10,7 @@ $etcolor: rgba(255, 255, 255, 0.419);
 $fcolor: black;
 $gcolor: rgb(124, 124, 34);
 $hcolor: orange;
+$icolor: rgba(208, 30, 196, 0.784);
 $bkgcolor: rgba(227, 227, 183);
 $afont: 'Righteous';
 $bfont: 'Satisfy';
@@ -67,6 +68,7 @@ body {
 
         #titulodePagina {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             font-family: $ifont;
             font-size: $afontsize;
@@ -85,7 +87,7 @@ body {
             padding-bottom: 20px;
         }
 
-        #subtituloBdePagina{
+        #subtituloBdePagina {
             display: flex;
             justify-content: space-around;
             font-family: $afont;
@@ -103,47 +105,47 @@ body {
             flex-wrap: wrap;
             width: 100%;
 
-            .novedadesPagPrinc{
+            .novedadesPagPrinc {
                 display: flex;
                 flex-direction: column;
 
-                a{
+                a {
                     text-decoration: none;
                 }
 
-                .novedadesPagPrincCard{
+                .novedadesPagPrincCard {
                     border: 1px solid $bcolor;
                     margin: 20px;
                 }
 
-                .botonesEnIndex{
+                .botonesEnIndex {
                     display: flex;
                     justify-content: space-around;
                     flex-wrap: wrap;
 
-                    a{
+                    a {
                         display: flex;
                         justify-content: space-around;
                         width: 30%;
 
-                        img{
+                        img {
 
                             width: 60%;
                             margin: 20px;
-                            
+
                         }
                     }
 
                 }
 
-                .novedadesPagPrincTitulo{
+                .novedadesPagPrincTitulo {
                     text-align: center;
                     color: $hcolor;
                     font-family: $afont;
-                    margin: 20px;                    
+                    margin: 20px;
                 }
 
-                p{
+                p {
                     text-align: center;
                     color: $ecolor;
                     font-size: $effontsize;
@@ -171,44 +173,45 @@ body {
             }
 
         }
-        .rdosPaginaSS{
+
+        .rdosPaginaSS {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        
 
-            .subtituloRdosSS{
+
+            .subtituloRdosSS {
                 font-family: $afont;
                 color: $hcolor;
                 font-size: $cfontsize;
                 text-align: center;
             }
 
-            .rdosPaginaSSCat{
+            .rdosPaginaSSCat {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
                 margin: 20px;
 
-                a{
+                a {
                     display: flex;
                     justify-content: space-around;
                     justify-items: center;
                     width: 50%;
-    
-                    img{
+
+                    img {
                         width: 50%;
                         align-content: center;
                         margin: 20px;
                     }
-                    
+
                 }
             }
 
 
         }
-        
+
     }
 
     footer {
@@ -275,7 +278,7 @@ body {
         text-align: center;
         margin: 20px;
         border-bottom: 3px solid $ccolor;
-        
+
 
         .escudoRdo {
             img {
@@ -319,7 +322,7 @@ body {
             justify-content: space-around;
             width: 100%;
             margin: 20px;
-            
+
 
             tr {
                 font-family: $dfont;
@@ -356,10 +359,10 @@ body {
             }
 
         }
-        
+
     }
 
-    #tablaPlayoffSl{
+    #tablaPlayoffSl {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -368,28 +371,28 @@ body {
         width: 99%;
         margin: 20px;
 
-        .tablaPlayoffSl{
+        .tablaPlayoffSl {
 
-            
-            tr{
-                td{
+
+            tr {
+                td {
                     width: 80px;
                     font-family: $dfont;
                     font-size: $defontsize;
                     color: $ecolor;
                 }
 
-                .borderFullLlave{
+                .borderFullLlave {
                     width: 300px;
                     height: 30px;
                     border: 1px solid white;
                 }
 
-                .borderLeftLlave{
+                .borderLeftLlave {
                     border-left: 1px solid white;
                 }
 
-                .borderDownLlave{
+                .borderDownLlave {
                     width: 80px;
                     border-bottom: 1px solid white;
                 }
@@ -424,6 +427,56 @@ body {
             }
         }
     }
+
+    #tablaPlayoffLde {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 99%;
+        margin: 20px;
+
+        .tablaPlayoffLde {
+
+            margin: 50px;
+
+            .separacion {
+                height: 50px;
+            }
+
+            tr {
+                td {
+                    width: 80px;
+                    font-family: $dfont;
+                    font-size: $defontsize;
+                    color: $ecolor;
+                }
+
+                .borderFullLlave {
+                    width: 300px;
+                    height: 30px;
+                    border: 3px solid $hcolor;
+                }
+
+                .borderLeftLlave {
+                    border-left: 1px solid $hcolor;
+                }
+
+                .borderDownLlave {
+                    width: 80px;
+                    border-bottom: 1px solid $hcolor;
+                }
+
+                .instancia {
+                    font-weight: bold;
+                    color: $acolor;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
 }
 
 /*Paginas de SS*/
@@ -445,10 +498,13 @@ body {
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
+        align-content: center;
 
-        .rdosEspecialesSS{
+        .rdosEspecialesSS {
+
             color: $ecolor;
-            h3{
+
+            h3 {
                 color: $acolor;
             }
         }
@@ -525,7 +581,144 @@ body {
 
 }
 
+/*pagina de LDE*/
+
+#menudeLde {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 45%;
+        margin: 20px;
+
+        img {
+            width: 100%;
+            margin: 20px;
+            box-shadow: 10px 15px 15px $acolor;
+        }
+
+        .imagenSeleccionable {
+            display: flex;
+
+            .img2 {
+                width: 100%;
+                box-shadow: -10px 15px 15px $acolor;
+
+                &:hover {
+                    box-shadow: -10px 15px 15px $hcolor;
+                }
+
+            }
+        }
+
+        .opcionesMenuLde {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-family: $afont;
+            font-size: $cfontsize;
+            line-height: 100%;
+
+
+
+            .opciondeMenuLde {
+                text-decoration: none;
+                color: $ecolor;
+                margin: 5px;
+
+                &:hover {
+                    font-size: $bcfontsize;
+                    text-shadow: 5px 5px 10px $hcolor;
+                }
+            }
+
+        }
+
+        .buscadorDeMesa {
+            display: flex;
+            justify-content: center;
+
+
+            iframe {
+                margin: 20px;
+                box-shadow: 10px 15px 15px $bcolor;
+
+                &:hover {
+                    box-shadow: 10px 15px 30px $hcolor;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+/*pagina de TMTs*/
+
+#fechasFindeTMT{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+
+
+    .fechaTMT{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px;
+        width: 50%;
+
+        .fecha{
+            width: 100%;
+            margin: 30px;
+            box-shadow: 10px 10px 15px $icolor;
+        }
+
+        .flyersTMT{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+            img{
+                width: 100%;
+                margin: 20px
+            }
+
+        }
+    }
+}
+
+
+
+/*------------------MQ---------------------*/
+
 @media screen and (max-width: 991px) {
+
+    #contenidoPagina{
+        #titulodePagina {
+            text-align: center;
+            font-family: $ifont;
+            font-size: $afontsize;
+            color: $ecolor;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
     .paginaSL {
 
         .escudosLiga {
@@ -567,6 +760,59 @@ body {
                 }
             }
         }
+
+    }
+
+    /*----------Pagina de LDE--------------*/
+
+    #menudeLde {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        justify-content: space-around;
+
+        .seccion1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 20px;
+            width: 100%;
+
+            .buscadorDeMesa {
+                display: flex;
+                justify-content: center;
+    
+    
+                iframe {
+                    margin: 20px;
+                    box-shadow: -10px 15px 15px $bcolor;
+
+                    &:hover {
+                        box-shadow: 10px 15px 30px $hcolor;
+                    }
+                }
+    
+            }
+
+            .imagenSeleccionable {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .img2 {
+                    width: 100%;
+                    box-shadow: 10px 15px 15px $acolor;
+    
+                    &:hover {
+                        box-shadow: 10px 15px 15px $hcolor;
+                    }
+    
+                }
+            }
+        }
+
 
     }
 }
