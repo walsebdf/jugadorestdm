@@ -34,9 +34,6 @@ $efontsize: 20px;
 $effontsize: 16px;
 $ffontsize: 12px;
 
-.itemResaltado{
-        box-shadow: 10px 10px 10px $icolor;
-}
 
 body {
     background-image: url(../images/gran_logo_corazon_oscuro.jpg);
@@ -500,6 +497,11 @@ body {
                     width: 300px;
                     height: 30px;
                     border: 3px solid $hcolor;
+                }
+
+                .resultadoEnLlave{
+                    color: $ccolor;
+                    font-weight: bold;
                 }
 
                 .borderLeftLlave {
