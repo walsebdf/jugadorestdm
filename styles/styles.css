@@ -1,4 +1,8 @@
 /*Aplica a todo*/
+.itemResaltado {
+  box-shadow: 10px 10px 10px rgba(208, 30, 196, 0.784);
+}
+
 body {
   background-image: url(../images/gran_logo_corazon_oscuro.jpg);
   background-size: 100%;
@@ -53,20 +57,46 @@ body #contenidoPagina #subtituloBdePagina {
   padding-bottom: 20px;
 }
 body #contenidoPagina #encabezadoIndex {
+  display: grid;
+  grid-template-areas: "anuncio novedades" "anuncio novedades" "quienes quienes";
+  grid-template-columns: 35% auto;
+  grid-template-rows: 40% auto auto;
+  margin-bottom: 100px;
+}
+body #contenidoPagina #encabezadoIndex .anuncio {
+  grid-area: anuncio;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  text-align: center;
+  margin: 10px;
+}
+body #contenidoPagina #encabezadoIndex .anuncio .titulo_anuncio {
+  text-align: center;
+}
+body #contenidoPagina #encabezadoIndex .anuncio .texto_anuncio {
+  font-style: italic;
+}
+body #contenidoPagina #encabezadoIndex .anuncio .datos_anuncio {
+  color: rgb(34, 159, 213);
+  font-weight: bold;
+  text-align: start;
+}
+body #contenidoPagina #encabezadoIndex .anuncio img {
   width: 100%;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
+  grid-area: novedades;
   display: flex;
   flex-direction: column;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a {
   text-decoration: none;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincCard {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a .itemResaltado {
+  box-shadow: 10px 10px 15px yellow;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a .novedadesPagPrincCard {
   border: 1px solid rgb(34, 159, 213);
   margin: 20px;
 }
@@ -96,6 +126,7 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
   font-size: 16px;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos {
+  grid-area: quienes;
   margin: 20px;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos .encabezadoIndexTitulo {
@@ -492,21 +523,21 @@ body footer .enlaces {
 }
 #fechasFindeTMT .fechaTMT {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin: 50px;
+  margin: 15px;
   width: 50%;
 }
 #fechasFindeTMT .fechaTMT .fecha {
   width: 100%;
-  margin: 30px;
+  margin: 15px;
   box-shadow: 10px 10px 15px rgba(208, 30, 196, 0.784);
 }
 #fechasFindeTMT .fechaTMT .flyersTMT {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #fechasFindeTMT .fechaTMT .flyersTMT img {
   width: 100%;
@@ -515,13 +546,20 @@ body footer .enlaces {
 
 /*------------------MQ---------------------*/
 @media screen and (max-width: 991px) {
-  #contenidoPagina #titulodePagina {
+  body #contenidoPagina #titulodePagina {
     text-align: center;
     font-family: "Condiment";
     font-size: 60px;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  body #contenidoPagina #encabezadoIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .paginaSL .escudosLiga {
     display: flex;

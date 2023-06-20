@@ -11,6 +11,7 @@ $fcolor: black;
 $gcolor: rgb(124, 124, 34);
 $hcolor: orange;
 $icolor: rgba(208, 30, 196, 0.784);
+$jcolor: yellow;
 $bkgcolor: rgba(227, 227, 183);
 $afont: 'Righteous';
 $bfont: 'Satisfy';
@@ -32,6 +33,10 @@ $defontsize: 25px;
 $efontsize: 20px;
 $effontsize: 16px;
 $ffontsize: 12px;
+
+.itemResaltado{
+        box-shadow: 10px 10px 10px $icolor;
+}
 
 body {
     background-image: url(../images/gran_logo_corazon_oscuro.jpg);
@@ -99,23 +104,60 @@ body {
 
 
         #encabezadoIndex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            width: 100%;
+            display: grid;
+            grid-template-areas:
+                "anuncio novedades"
+                "anuncio novedades"
+                "quienes quienes";
+            grid-template-columns: 35% auto;
+            grid-template-rows: 40% auto auto;
+            margin-bottom: 100px;
+
+            .anuncio {
+                grid-area: anuncio;
+                color: $ecolor;
+                display: flex;
+                flex-direction: column;
+
+                text-align: center;
+                margin: 10px;
+
+                .titulo_anuncio {
+                    text-align: center;
+                }
+
+                .texto_anuncio {
+                    font-style: italic;
+                }
+
+                .datos_anuncio {
+                    color: $bcolor;
+                    font-weight: bold;
+                    text-align: start;
+                }
+
+                img {
+                    width: 100%
+                }
+
+            }
 
             .novedadesPagPrinc {
+                grid-area: novedades;
                 display: flex;
                 flex-direction: column;
 
                 a {
                     text-decoration: none;
-                }
 
-                .novedadesPagPrincCard {
-                    border: 1px solid $bcolor;
-                    margin: 20px;
+                    .itemResaltado {
+                        box-shadow: 10px 10px 15px yellow;
+                    }
+
+                    .novedadesPagPrincCard {
+                        border: 1px solid $bcolor;
+                        margin: 20px;
+                    }
                 }
 
                 .botonesEnIndex {
@@ -154,6 +196,7 @@ body {
             }
 
             #quienesSomos {
+                grid-area: quienes;
                 margin: 20px;
 
                 .encabezadoIndexTitulo {
@@ -665,7 +708,7 @@ body {
 
 /*pagina de TMTs*/
 
-#fechasFindeTMT{
+#fechasFindeTMT {
 
     display: flex;
     flex-direction: column;
@@ -673,27 +716,27 @@ body {
     flex-wrap: wrap;
 
 
-    .fechaTMT{
+    .fechaTMT {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        margin: 50px;
+        margin: 15px;
         width: 50%;
 
-        .fecha{
+        .fecha {
             width: 100%;
-            margin: 30px;
+            margin: 15px;
             box-shadow: 10px 10px 15px $icolor;
         }
 
-        .flyersTMT{
+        .flyersTMT {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
 
 
-            img{
+            img {
                 width: 100%;
                 margin: 20px
             }
@@ -708,14 +751,28 @@ body {
 
 @media screen and (max-width: 991px) {
 
-    #contenidoPagina{
-        #titulodePagina {
-            text-align: center;
-            font-family: $ifont;
-            font-size: $afontsize;
-            color: $ecolor;
-            padding-top: 20px;
-            padding-bottom: 20px;
+    body {
+
+
+        #contenidoPagina {
+
+            #titulodePagina {
+                text-align: center;
+                font-family: $ifont;
+                font-size: $afontsize;
+                color: $ecolor;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            #encabezadoIndex {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
         }
     }
 
@@ -783,8 +840,8 @@ body {
             .buscadorDeMesa {
                 display: flex;
                 justify-content: center;
-    
-    
+
+
                 iframe {
                     margin: 20px;
                     box-shadow: -10px 15px 15px $bcolor;
@@ -793,22 +850,22 @@ body {
                         box-shadow: 10px 15px 30px $hcolor;
                     }
                 }
-    
+
             }
 
             .imagenSeleccionable {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
 
-                    .img2 {
+                .img2 {
                     width: 100%;
                     box-shadow: 10px 15px 15px $acolor;
-    
+
                     &:hover {
                         box-shadow: 10px 15px 15px $hcolor;
                     }
-    
+
                 }
             }
         }
