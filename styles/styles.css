@@ -1,11 +1,14 @@
 /*Aplica a todo*/
 body {
   background-image: url(../images/gran_logo_corazon_oscuro.jpg);
-  background-size: 100%;
+  background-size: 95%;
 }
 body header {
-  background: linear-gradient(rgb(161, 47, 255), rgba(255, 255, 255, 0.419));
+  background-image: url(../images/logo_chico_frio.png);
+  background-size: 100%;
+  background-position: center;
   text-align: center;
+  height: 150px;
   box-shadow: 10px 5px 15px white;
   width: 100%;
   display: flex;
@@ -14,12 +17,20 @@ body header {
   transition: all 3s;
 }
 body header:hover {
-  background: linear-gradient(white, rgba(221, 15, 15, 0.419));
+  background-image: url(../images/logo_chico.png);
 }
 body header .nav-item {
   font-family: "Mate SC";
   font-size: 25px;
   font-weight: 600;
+}
+body header .nav-link {
+  color: orange;
+  text-shadow: 10px 10px 2px rgba(0, 255, 255, 0.5);
+}
+body header .nav-link:hover {
+  color: cyan;
+  text-shadow: 10px 10px 2px rgba(255, 165, 0, 0.5);
 }
 body #contenidoPagina .banner img {
   width: 100%;
@@ -546,6 +557,33 @@ body footer .enlaces {
 
 /*------------------MQ---------------------*/
 @media screen and (max-width: 991px) {
+  body header {
+    background: linear-gradient(rgb(161, 47, 255), rgba(255, 255, 255, 0.419));
+    text-align: center;
+    box-shadow: 10px 5px 15px white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: all 3s;
+  }
+  body header:hover {
+    background: linear-gradient(white, rgba(221, 15, 15, 0.419));
+    height: 350px;
+  }
+  body header .nav-item {
+    font-family: "Mate SC";
+    font-size: 25px;
+    font-weight: 600;
+  }
+  body header .nav-link {
+    color: black;
+    text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.5);
+  }
+  body header .nav-link:hover {
+    color: white;
+    text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.5);
+  }
   body #contenidoPagina #titulodePagina {
     text-align: center;
     font-family: "Condiment";
@@ -560,6 +598,9 @@ body footer .enlaces {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+  }
+  body #contenidoPagina .banner {
+    display: none;
   }
   .paginaSL .escudosLiga {
     display: flex;
