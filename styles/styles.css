@@ -63,6 +63,36 @@ body #contenidoPagina #subtituloBdePagina {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+body #contenidoPagina .slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 25px;
+  box-shadow: 10px 10px 15px white;
+}
+body #contenidoPagina .slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 6400px;
+}
+body #contenidoPagina .slider .slide-track .slide {
+  width: 200px;
+}
+body #contenidoPagina .slider .slide-track .slide .img {
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3200px);
+    -webkit-transform: translateX(-3000px);
+  }
+}
 body #contenidoPagina #encabezadoIndex {
   display: grid;
   grid-template-areas: "anuncio novedades" "anuncio novedades" "quienes quienes";

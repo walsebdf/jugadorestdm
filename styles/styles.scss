@@ -115,6 +115,44 @@ body {
             padding-bottom: 20px;
         }
 
+        .slider{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 25px;
+            box-shadow: 10px 10px 15px $ecolor;
+
+
+            .slide-track{
+                display: flex;
+                animation: scroll 40s linear infinite;
+                -webkit-animation: scroll 40s linear infinite;
+                width: calc(200px * 32);
+
+                .slide{
+                    width: 200px;
+
+                    .img{
+                        width: 100%;
+
+                    }
+
+                }
+            }
+        }
+
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-200px * 16));
+                -webkit-transform: translateX(calc(-200px * 15));
+            }
+        }
+
 
         #encabezadoIndex {
             display: grid;
