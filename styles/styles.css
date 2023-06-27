@@ -962,9 +962,6 @@ body footer .enlaces {
   body #contenidoPagina #cuerpoPaginaRdosTMT div table tr td {
     padding-top: 10px;
   }
-  body #contenidoPagina #cuerpoPaginaRdosTMT div table tr .nombreClubTMTs {
-    font-size: 60px;
-  }
   .paginaSL .escudosLiga {
     display: flex;
     flex-wrap: wrap;
