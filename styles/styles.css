@@ -244,6 +244,13 @@ body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
   align-content: center;
   margin: 20px;
 }
+body #contenidoPagina .infoRelevada {
+  font-size: 35px;
+  color: cyan;
+  text-shadow: -5px -5px 10px white;
+  font-family: "Righteous";
+  margin: 20px;
+}
 body #contenidoPagina #cuerpoPaginaRdosTMT div {
   padding-top: 20px;
 }

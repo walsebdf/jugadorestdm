@@ -4,6 +4,7 @@ $bcolor: rgb(34, 159, 213);
 $ccolor: rgba(221, 15, 15);
 $ctcolor: rgba(221, 15, 15, 0.419);
 $dcolor: green;
+$dlightcolor: lightgreen;
 $dtcolor: rgba(0, 128, 0, 0.419);
 $ecolor: white;
 $etcolor: rgba(255, 255, 255, 0.419);
@@ -350,12 +351,22 @@ body {
 
         /*Pagina de Rdos de TMT*/
 
+        .infoRelevada{
+            font-size: $cdfontsize;
+            color: $kcolor;
+            text-shadow: -5px -5px 10px $ecolor;
+            font-family: $afont;
+            margin: 20px;
+        }
+
         #cuerpoPaginaRdosTMT {
 
 
             div {
                 padding-top: 20px;
             }
+
+
 
             .campeones {
                 display: flex;
