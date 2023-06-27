@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Aplica a todo*/
 body {
   background-image: url(../images/gran_logo_corazon_oscuro.jpg);
@@ -31,6 +32,9 @@ body header .nav-link {
 body header .nav-link:hover {
   color: cyan;
   text-shadow: 10px 10px 2px rgba(255, 165, 0, 0.5);
+}
+body #contenidoPagina {
+  /*Pagina de Rdos de TMT*/
 }
 body #contenidoPagina .banner img {
   width: 100%;
@@ -95,9 +99,9 @@ body #contenidoPagina .slider .slide-track .slide .img {
 }
 body #contenidoPagina #encabezadoIndex {
   display: grid;
-  grid-template-areas: "anuncio novedades" "anuncio novedades" "quienes quienes";
+  grid-template-areas: "anuncio novedades" "anuncio novedades" "eventos eventos" "quienes quienes";
   grid-template-columns: 35% auto;
-  grid-template-rows: 40% auto auto;
+  grid-template-rows: 40% auto auto auto;
   margin-bottom: 100px;
 }
 body #contenidoPagina #encabezadoIndex .anuncio {
@@ -162,6 +166,38 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
   color: white;
   font-size: 16px;
 }
+body #contenidoPagina #encabezadoIndex .eventos {
+  grid-area: eventos;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  box-shadow: 10px 10px 15px white;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento {
+  width: 60%;
+}
+body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento .tituloEvento {
+  font-family: "Mate SC";
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento .textoEvento {
+  font-family: "Mate SC";
+  font-size: 25px;
+  color: white;
+  text-align: start;
+  line-height: 200%;
+  padding-top: 30px;
+}
+body #contenidoPagina #encabezadoIndex .eventos .imagenEvento {
+  width: 36%;
+}
+body #contenidoPagina #encabezadoIndex .eventos .imagenEvento img {
+  width: 100%;
+}
 body #contenidoPagina #encabezadoIndex #quienesSomos {
   grid-area: quienes;
   margin: 20px;
@@ -207,6 +243,265 @@ body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
   width: 50%;
   align-content: center;
   margin: 20px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT div {
+  padding-top: 20px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tituloAreaRdosTMTs {
+  font-size: 35px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs {
+  padding: 20px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs tr {
+  font-size: 16px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .escudoClubOrg {
+  text-align: end;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .escudoClubOrg img {
+  width: 40%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .escudoClubJugador {
+  text-align: end;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .escudoClubJugador img {
+  width: 40%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs .nombreJugadorRdosTMTs {
+  text-align: center;
+  font-weight: bold;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .campeones .tablaCampeonesRdosTMTs td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tituloAreaRdosTMTs {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs {
+  margin: 5px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs .nombreJugadorRdosTMTs {
+  font-size: 16px;
+  font-weight: bolder;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs .puntosGanadosTMTs {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs .escudoClubJugador {
+  text-align: end;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugmaspuntos .tablaPuntosGanadosTMTs .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tituloAreaRdosTMTs {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs {
+  margin: 5px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs .nombreJugadorRdosTMTs {
+  font-size: 16px;
+  font-weight: bolder;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs .nuevaCategoriaTMTs {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs .escudoClubJugador {
+  text-align: end;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .jugascendidos .tablaAscensosTMTs .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tituloAreaRdosTMTs {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos {
+  margin: 5px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos .nombreClubTMTs {
+  font-size: 20px;
+  font-weight: bolder;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos .puntosGanadosTMTs {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos .escudoClubJugador {
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspuntos .tablaClubMasPuntos .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tituloAreaRdosTMTs {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion {
+  margin: 5px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion .nombreClubTMTs {
+  font-size: 20px;
+  font-weight: bolder;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion .porcentajeParticipaciónTMTs {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion .escudoClubJugador {
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .clubmaspresencias .tablaPorcentajeParticipacion .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .tituloAreaRdosTMTs {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT {
+  margin: 5px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT tr {
+  font-size: 20px;
+  color: white;
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .tituloTablaRdosTMTs {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .nombreClubTMTs {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: start;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .porcentajeParticipaciónTMTs {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escudoClubJugador {
+  text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .mobileTable {
+  visibility: hidden;
 }
 body footer {
   display: flex;
@@ -629,8 +924,46 @@ body footer .enlaces {
     flex-wrap: wrap;
     width: 100%;
   }
+  body #contenidoPagina #encabezadoIndex .eventos {
+    grid-area: eventos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    box-shadow: 10px 10px 15px white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento {
+    width: 90%;
+  }
+  body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento .tituloEvento {
+    font-family: "Mate SC";
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  body #contenidoPagina #encabezadoIndex .eventos .leyendasEvento .textoEvento {
+    font-family: "Mate SC";
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 100%;
+  }
+  body #contenidoPagina #encabezadoIndex .eventos .imagenEvento {
+    width: 90%;
+  }
+  body #contenidoPagina #encabezadoIndex .eventos .imagenEvento img {
+    width: 100%;
+  }
   body #contenidoPagina .banner {
     display: none;
+  }
+  body #contenidoPagina #cuerpoPaginaRdosTMT div table tr td {
+    padding-top: 10px;
+  }
+  body #contenidoPagina #cuerpoPaginaRdosTMT div table tr .nombreClubTMTs {
+    font-size: 60px;
   }
   .paginaSL .escudosLiga {
     display: flex;

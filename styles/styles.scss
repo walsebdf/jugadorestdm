@@ -12,7 +12,7 @@ $gcolor: rgb(124, 124, 34);
 $hcolor: orange;
 $icolor: rgba(208, 30, 196, 0.784);
 $jcolor: yellow;
-$kcolor:cyan;
+$kcolor: cyan;
 $bkgcolor: rgba(227, 227, 183);
 $afont: 'Righteous';
 $bfont: 'Satisfy';
@@ -63,16 +63,16 @@ body {
             font-weight: 600;
         }
 
-        .nav-link{
+        .nav-link {
             color: $hcolor;
             text-shadow: 10px 10px 2px transparentize($color: $kcolor, $amount: 0.5);
 
-            &:hover{
+            &:hover {
                 color: $kcolor;
                 text-shadow: 10px 10px 2px transparentize($color: $hcolor, $amount: 0.5);
             }
         }
-    
+
     }
 
     #contenidoPagina {
@@ -115,7 +115,7 @@ body {
             padding-bottom: 20px;
         }
 
-        .slider{
+        .slider {
             width: 100%;
             height: auto;
             margin: auto;
@@ -124,16 +124,16 @@ body {
             box-shadow: 10px 10px 15px $ecolor;
 
 
-            .slide-track{
+            .slide-track {
                 display: flex;
                 animation: scroll 40s linear infinite;
                 -webkit-animation: scroll 40s linear infinite;
                 width: calc(200px * 32);
 
-                .slide{
+                .slide {
                     width: 200px;
 
-                    .img{
+                    .img {
                         width: 100%;
 
                     }
@@ -143,11 +143,12 @@ body {
         }
 
         @keyframes scroll {
-            0%{
+            0% {
                 transform: translateX(0);
                 -webkit-transform: translateX(0);
             }
-            100%{
+
+            100% {
                 transform: translateX(calc(-200px * 16));
                 -webkit-transform: translateX(calc(-200px * 15));
             }
@@ -159,9 +160,10 @@ body {
             grid-template-areas:
                 "anuncio novedades"
                 "anuncio novedades"
+                "eventos eventos"
                 "quienes quienes";
             grid-template-columns: 35% auto;
-            grid-template-rows: 40% auto auto;
+            grid-template-rows: 40% auto auto auto;
             margin-bottom: 100px;
 
             .anuncio {
@@ -246,6 +248,46 @@ body {
 
             }
 
+            .eventos {
+                grid-area: eventos;
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 50px;
+                box-shadow: 10px 10px 15px $ecolor;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                .leyendasEvento {
+
+                    width: 60%;
+
+
+                    .tituloEvento {
+                        font-family: $dfont;
+                        font-size: $cfontsize;
+                        color: $ecolor;
+                        text-align: center;
+                    }
+
+                    .textoEvento {
+                        font-family: $dfont;
+                        font-size: $defontsize;
+                        color: $ecolor;
+                        text-align: start;
+                        line-height: 200%;
+                        padding-top: 30px;
+                    }
+                }
+
+                .imagenEvento {
+                    width: 36%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
             #quienesSomos {
                 grid-area: quienes;
                 margin: 20px;
@@ -303,6 +345,346 @@ body {
                 }
             }
 
+
+        }
+
+        /*Pagina de Rdos de TMT*/
+
+        #cuerpoPaginaRdosTMT {
+
+
+            div {
+                padding-top: 20px;
+            }
+
+            .campeones {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .tituloAreaRdosTMTs {
+                    font-size: $cdfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                }
+
+                .tablaCampeonesRdosTMTs {
+
+                    padding: 20px;
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+
+                    }
+
+                    tr {
+                        font-size: $effontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                    }
+
+                    .escudoClubOrg {
+                        text-align: end;
+
+                        img {
+                            width: 40%;
+                        }
+                    }
+
+                    .escudoClubJugador {
+                        text-align: end;
+
+                        img {
+                            width: 40%;
+                        }
+                    }
+
+                    .nombreJugadorRdosTMTs {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    td {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+
+            }
+
+            .jugmaspuntos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .tituloAreaRdosTMTs {
+                    font-size: $dfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .tablaPuntosGanadosTMTs {
+
+                    margin: 5px;
+
+                    tr {
+                        font-size: $ffontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                    }
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .nombreJugadorRdosTMTs {
+                        font-size: $effontsize;
+                        font-weight: bolder;
+                    }
+
+                    .puntosGanadosTMTs {
+                        text-align: center;
+                        font-size: $effontsize;
+                    }
+
+                    .escudoClubJugador {
+                        text-align: end;
+
+                        img {
+                            width: 35%;
+                        }
+
+                    }
+
+                }
+            }
+
+            .jugascendidos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .tituloAreaRdosTMTs {
+                    font-size: $dfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .tablaAscensosTMTs {
+
+                    margin: 5px;
+
+                    tr {
+                        font-size: $ffontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                    }
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .nombreJugadorRdosTMTs {
+                        font-size: $effontsize;
+                        font-weight: bolder;
+                    }
+
+                    .nuevaCategoriaTMTs {
+                        text-align: center;
+                        font-size: $effontsize;
+                    }
+
+                    .escudoClubJugador {
+                        text-align: end;
+
+                        img {
+                            width: 35%;
+                        }
+
+                    }
+
+                }
+            }
+
+            .clubmaspuntos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .tituloAreaRdosTMTs {
+                    font-size: $dfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .tablaClubMasPuntos {
+                    margin: 5px;
+
+                    tr {
+                        font-size: $ffontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                    }
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .nombreClubTMTs {
+                        font-size: $efontsize;
+                        font-weight: bolder;
+                    }
+
+                    .puntosGanadosTMTs {
+                        text-align: center;
+                        font-size: $effontsize;
+                    }
+
+                    .escudoClubJugador {
+                        text-align: center;
+
+                        img {
+                            width: 35%;
+                        }
+
+                    }
+
+                }
+            }
+
+            .clubmaspresencias {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .tituloAreaRdosTMTs {
+                    font-size: $dfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .tablaPorcentajeParticipacion {
+                    margin: 5px;
+
+                    tr {
+                        font-size: $ffontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                    }
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .nombreClubTMTs {
+                        font-size: $efontsize;
+                        font-weight: bolder;
+                    }
+
+                    .porcentajeParticipaciónTMTs {
+                        text-align: center;
+                        font-size: $effontsize;
+                    }
+
+                    .escudoClubJugador {
+                        text-align: center;
+
+                        img {
+                            width: 35%;
+                        }
+
+                    }
+
+                }
+            }
+
+            .convocatoria {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .tituloAreaRdosTMTs {
+                    font-size: $dfontsize;
+                    color: $hcolor;
+                    font-family: $afont;
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .convocatoriaTMT {
+                    margin: 5px;
+
+                    tr {
+                        font-size: $efontsize;
+                        color: $ecolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .tituloTablaRdosTMTs {
+                        font-size: $efontsize;
+                        color: $acolor;
+                        font-family: $dfont;
+                        text-align: center;
+                    }
+
+                    .nombreClubTMTs {
+                        font-size: $efontsize;
+                        font-weight: bolder;
+                        text-align: start;
+                    }
+
+                    .porcentajeParticipaciónTMTs {
+                        text-align: center;
+                        font-size: $effontsize;
+                    }
+
+                    .escudoClubJugador {
+                        text-align: center;
+
+                        img {
+                            width: 35%;
+                        }
+
+                    }
+
+                }
+                
+                .mobileTable{
+                 visibility: hidden;       
+                }
+            }
 
         }
 
@@ -553,7 +935,7 @@ body {
                     border: 3px solid $hcolor;
                 }
 
-                .resultadoEnLlave{
+                .resultadoEnLlave {
                     color: $ccolor;
                     font-weight: bold;
                 }
@@ -803,6 +1185,7 @@ body {
 
 
 
+
 /*------------------MQ---------------------*/
 
 @media screen and (max-width: 991px) {
@@ -818,29 +1201,29 @@ body {
             justify-content: space-between;
             flex-wrap: wrap;
             transition: all 3s;
-    
+
             &:hover {
                 background: linear-gradient($ecolor, $ctcolor);
                 height: 350px;
             }
-    
+
             .nav-item {
                 font-family: $dfont;
                 font-size: $defontsize;
                 font-weight: 600;
             }
-    
-            .nav-link{
+
+            .nav-link {
                 color: $fcolor;
                 text-shadow: 10px 10px 2px transparentize($color: $ecolor, $amount: 0.5);
-    
-                &:hover{
+
+                &:hover {
                     color: $ecolor;
                     text-shadow: 10px 10px 2px transparentize($color: $ecolor, $amount: 0.5);
                 }
             }
-    
-        
+
+
         }
 
         #contenidoPagina {
@@ -860,12 +1243,79 @@ body {
                 justify-content: space-around;
                 flex-wrap: wrap;
                 width: 100%;
+
+                .eventos {
+                    grid-area: eventos;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding-top: 50px;
+                    box-shadow: 10px 10px 15px $ecolor;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .leyendasEvento {
+
+                        width: 90%;
+
+                        .tituloEvento {
+                            font-family: $dfont;
+                            font-size: $cfontsize;
+                            color: $ecolor;
+                            text-align: center;
+                        }
+
+                        .textoEvento {
+                            font-family: $dfont;
+                            font-size: $defontsize;
+                            color: $ecolor;
+                            text-align: center;
+                            line-height: 100%;
+                        }
+                    }
+
+                    .imagenEvento {
+                        width: 90%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
             }
 
-            .banner{
+            .banner {
                 display: none;
             }
+
+            #cuerpoPaginaRdosTMT {
+
+                div {
+
+                    table {
+
+                        tr {
+                            
+
+                            td{
+
+                                padding-top: 10px;
+
+                            }
+
+                            .nombreClubTMTs{
+                                font-size: $afontsize;
+                            }
+
+                        }   
+                    }
+                }
+
+
+            }
         }
+
     }
 
 
