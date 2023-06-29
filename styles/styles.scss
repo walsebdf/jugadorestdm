@@ -74,6 +74,21 @@ body {
             }
         }
 
+        .opcionNovedad{
+            text-shadow: 3px 3px 3px $ccolor;
+            color: $jcolor;
+            animation-name: parpadeo;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes parpadeo{
+            0% {text-shadow: 3px 3px 3px $ccolor; color: $jcolor;}
+            50% {text-shadow: 5px 5px 5px $jcolor;color: $ccolor;}
+            100% {text-shadow: 3px 3px 3px $ccolor; color: $jcolor;}    
+        }
+
     }
 
     #contenidoPagina {
@@ -200,6 +215,20 @@ body {
                 grid-area: novedades;
                 display: flex;
                 flex-direction: column;
+
+                .itemResaltado {
+
+                    box-shadow: 10px 10px 15px $jcolor;
+                    animation-name: parpadeo2;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes parpadeo2{
+                    0% {box-shadow: 10px 10px 15px $jcolor;}
+                    50%{box-shadow: 10px 10px 15px $ccolor;}
+                    100% {box-shadow: 10px 10px 15px $jcolor;}
+                }
 
                 a {
                     text-decoration: none;
@@ -696,6 +725,54 @@ body {
                  visibility: hidden;       
                 }
             }
+
+        }
+
+        #mesTMTsRdos{
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            color: $ecolor;
+
+            .tablaMesTMTsRdos{
+                font-family: $afont;
+                font-size: $cfontsize;
+                line-height: 100%;
+                margin: 40px;
+
+                tr{
+
+                    td{
+                        padding: 15px;
+                        text-align: center;
+                    }
+
+                    .nombreMesTMTsRdos{
+                        color: $bcolor;
+                    }
+
+                    .refFinde{
+                        background-color: $hcolor;
+
+                        a{
+                        text-decoration: none;
+                        color: $acolor;
+                        }
+                    }
+
+                    .refSemana{
+                        background-color: $dcolor;
+                        text-decoration: none;
+
+                        a{
+                        text-decoration: none;
+                        color: $hcolor;
+                        }
+                    }
+                }
+            }
+
 
         }
 
