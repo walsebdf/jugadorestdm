@@ -74,7 +74,7 @@ body {
             }
         }
 
-        .opcionNovedad{
+        .opcionNovedad {
             text-shadow: 3px 3px 3px $ccolor;
             color: $jcolor;
             animation-name: parpadeo;
@@ -83,10 +83,21 @@ body {
 
         }
 
-        @keyframes parpadeo{
-            0% {text-shadow: 3px 3px 3px $ccolor; color: $jcolor;}
-            50% {text-shadow: 5px 5px 5px $jcolor;color: $ccolor;}
-            100% {text-shadow: 3px 3px 3px $ccolor; color: $jcolor;}    
+        @keyframes parpadeo {
+            0% {
+                text-shadow: 3px 3px 3px $ccolor;
+                color: $jcolor;
+            }
+
+            50% {
+                text-shadow: 5px 5px 5px $jcolor;
+                color: $ccolor;
+            }
+
+            100% {
+                text-shadow: 3px 3px 3px $ccolor;
+                color: $jcolor;
+            }
         }
 
     }
@@ -177,9 +188,10 @@ body {
                 "anuncio novedades"
                 "anuncio novedades"
                 "eventos eventos"
+                "cumpleanos cumpleanos"
                 "quienes quienes";
             grid-template-columns: 35% auto;
-            grid-template-rows: 40% auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
             margin-bottom: 100px;
 
             .anuncio {
@@ -224,10 +236,18 @@ body {
                     animation-iteration-count: infinite;
                 }
 
-                @keyframes parpadeo2{
-                    0% {box-shadow: 10px 10px 15px $jcolor;}
-                    50%{box-shadow: 10px 10px 15px $ccolor;}
-                    100% {box-shadow: 10px 10px 15px $jcolor;}
+                @keyframes parpadeo2 {
+                    0% {
+                        box-shadow: 10px 10px 15px $jcolor;
+                    }
+
+                    50% {
+                        box-shadow: 10px 10px 15px $ccolor;
+                    }
+
+                    100% {
+                        box-shadow: 10px 10px 15px $jcolor;
+                    }
                 }
 
                 a {
@@ -318,6 +338,71 @@ body {
                 }
             }
 
+            #cumpleanos {
+                grid-area: cumpleanos;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-shadow: 10px 10px 15px $ecolor;
+
+
+                .encabezadoIndexTitulo {
+                    font-family: $ifont;
+                    font-size: $cfontsize;
+                    color: $ccolor;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
+
+                .tablacumples {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: flex-start;
+
+                    .tablaCumpleanos {
+                        
+                        margin: 20px;
+
+                        tr {
+                            th {
+                                color: $kcolor;
+                                font-family: $afont;
+                                font-size: $defontsize;
+                                text-align: center;
+                            }
+
+                            td {
+                                color: $ecolor;
+                                text-align: center;
+
+                                .escudoClub {
+                                    text-align: center;
+                                }
+
+                                img {
+                                    width: 35%;
+                                }
+                            }
+
+                            .escudoClub {
+                                text-align: center;
+                            }
+
+                            .nombreJugador {
+                                text-align: start;
+                            }
+
+                            .nombreClub {
+                                text-align: start;
+                            }
+                        }
+                    }
+
+                }
+            }
+
             #quienesSomos {
                 grid-area: quienes;
                 margin: 20px;
@@ -380,7 +465,7 @@ body {
 
         /*Pagina de Rdos de TMT*/
 
-        .infoRelevada{
+        .infoRelevada {
             font-size: $cdfontsize;
             color: $kcolor;
             text-shadow: -5px -5px 10px $ecolor;
@@ -720,54 +805,54 @@ body {
                     }
 
                 }
-                
-                .mobileTable{
-                 visibility: hidden;       
+
+                .mobileTable {
+                    visibility: hidden;
                 }
             }
 
         }
 
-        #mesTMTsRdos{
+        #mesTMTsRdos {
 
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
             color: $ecolor;
 
-            .tablaMesTMTsRdos{
+            .tablaMesTMTsRdos {
                 font-family: $afont;
                 font-size: $cfontsize;
                 line-height: 100%;
                 margin: 40px;
 
-                tr{
+                tr {
 
-                    td{
+                    td {
                         padding: 15px;
                         text-align: center;
                     }
 
-                    .nombreMesTMTsRdos{
+                    .nombreMesTMTsRdos {
                         color: $bcolor;
                     }
 
-                    .refFinde{
+                    .refFinde {
                         background-color: $hcolor;
 
-                        a{
-                        text-decoration: none;
-                        color: $acolor;
+                        a {
+                            text-decoration: none;
+                            color: $acolor;
                         }
                     }
 
-                    .refSemana{
+                    .refSemana {
                         background-color: $dcolor;
                         text-decoration: none;
 
-                        a{
-                        text-decoration: none;
-                        color: $hcolor;
+                        a {
+                            text-decoration: none;
+                            color: $hcolor;
                         }
                     }
                 }
@@ -1342,6 +1427,7 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+
                     .leyendasEvento {
 
                         width: 90%;
@@ -1384,16 +1470,16 @@ body {
                     table {
 
                         tr {
-                            
 
-                            td{
+
+                            td {
 
                                 padding-top: 10px;
 
                             }
 
 
-                        }   
+                        }
                     }
                 }
 
