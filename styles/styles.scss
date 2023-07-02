@@ -177,7 +177,7 @@ body {
 
             100% {
                 transform: translateX(calc(-200px * 16));
-                -webkit-transform: translateX(calc(-200px * 15));
+                -webkit-transform: translateX(calc(-200px * 16));
             }
         }
 
@@ -1346,6 +1346,46 @@ body {
             flex-wrap: wrap;
             justify-content: space-between;
 
+            table{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                tr{
+                    td{
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        color: $ecolor;
+                        text-align: start;
+                        box-shadow: 1px 1px 10px $fcolor;
+
+                        img{
+                            width: 60%
+                        }
+                    }
+
+                    .categoriasTMTFinde{
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        font-weight: bold;
+                        color: $bcolor;
+                        text-align: start;
+                    }
+
+                    .preciosTMTFinde{
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        color: $hcolor;
+                        text-align: start;
+                    }
+
+                    .informesTMTFinde{
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        color: $dcolor;
+                        text-align: start;
+                    }
+
+                }
+            }
 
             img {
                 width: 100%;
