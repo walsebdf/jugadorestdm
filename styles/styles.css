@@ -762,6 +762,18 @@ body footer .enlaces {
   font-size: 25px;
   color: white;
 }
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .separacion {
+  height: 50px;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .scheduling {
+  color: orange;
+  text-align: center;
+  border-left: 1px dashed orange;
+  border-right: 1px dashed orange;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .rightScheduling {
+  border-right: 1px dashed orange;
+}
 .paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .borderFullLlave {
   width: 300px;
   height: 30px;

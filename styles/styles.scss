@@ -362,7 +362,7 @@ body {
                     align-items: flex-start;
 
                     .tablaCumpleanos {
-                        
+
                         margin: 20px;
 
                         tr {
@@ -1031,6 +1031,21 @@ body {
                     color: $ecolor;
                 }
 
+                .separacion {
+                    height: 50px;
+                }
+
+                .scheduling{
+                    color: $hcolor;
+                    text-align: center;
+                    border-left: 1px dashed $hcolor ;
+                    border-right: 1px dashed $hcolor;
+                }
+
+                .rightScheduling{
+                    border-right: 1px dashed $hcolor;
+                }
+
                 .borderFullLlave {
                     width: 300px;
                     height: 30px;
@@ -1076,6 +1091,7 @@ body {
             }
         }
     }
+
 
     #tablaPlayoffLde {
         display: flex;
@@ -1346,23 +1362,24 @@ body {
             flex-wrap: wrap;
             justify-content: space-between;
 
-            table{
+            table {
                 margin-top: 20px;
                 margin-bottom: 20px;
-                tr{
-                    td{
+
+                tr {
+                    td {
                         font-family: $dfont;
                         font-size: $efontsize;
                         color: $ecolor;
                         text-align: start;
                         box-shadow: 1px 1px 10px $fcolor;
 
-                        img{
+                        img {
                             width: 60%
                         }
                     }
 
-                    .categoriasTMTFinde{
+                    .categoriasTMTFinde {
                         font-family: $dfont;
                         font-size: $efontsize;
                         font-weight: bold;
@@ -1370,14 +1387,14 @@ body {
                         text-align: start;
                     }
 
-                    .preciosTMTFinde{
+                    .preciosTMTFinde {
                         font-family: $dfont;
                         font-size: $efontsize;
                         color: $hcolor;
                         text-align: start;
                     }
 
-                    .informesTMTFinde{
+                    .informesTMTFinde {
                         font-family: $dfont;
                         font-size: $efontsize;
                         color: $dcolor;
