@@ -824,6 +824,15 @@ body footer .enlaces {
 .paginaSL #tablaPlayoffLde .tablaPlayoffLde .separacion {
   height: 50px;
 }
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde .scheduling {
+  color: orange;
+  text-align: center;
+  border-left: 1px dashed orange;
+  border-right: 1px dashed orange;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde .rightScheduling {
+  border-right: 1px dashed orange;
+}
 .paginaSL #tablaPlayoffLde .tablaPlayoffLde tr td {
   width: 80px;
   font-family: "Mate SC";

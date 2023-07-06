@@ -1022,7 +1022,6 @@ body {
 
         .tablaPlayoffSl {
 
-
             tr {
                 td {
                     width: 80px;
@@ -1108,6 +1107,17 @@ body {
 
             .separacion {
                 height: 50px;
+            }
+
+            .scheduling{
+                color: $hcolor;
+                text-align: center;
+                border-left: 1px dashed $hcolor ;
+                border-right: 1px dashed $hcolor;
+            }
+
+            .rightScheduling{
+                border-right: 1px dashed $hcolor;
             }
 
             tr {
