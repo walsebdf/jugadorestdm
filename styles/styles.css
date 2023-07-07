@@ -265,10 +265,13 @@ body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleano
   font-family: "Righteous";
   font-size: 25px;
   text-align: center;
+  padding: 10px;
 }
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr td {
   color: white;
   text-align: center;
+  padding: 10px;
+  width: 150px;
 }
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr td .escudoClub {
   text-align: center;
@@ -276,14 +279,19 @@ body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleano
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr td img {
   width: 35%;
 }
+body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr .edadJugador {
+  width: 70px;
+}
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr .escudoClub {
   text-align: center;
+  width: 100px;
 }
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr .nombreJugador {
   text-align: start;
 }
 body #contenidoPagina #encabezadoIndex #cumpleanos .tablacumples .tablaCumpleanos tr .nombreClub {
   text-align: start;
+  width: 250px;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos {
   grid-area: quienes;
@@ -1023,6 +1031,7 @@ body footer .enlaces {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 #fechasFindeTMT .fechaTMT .flyersTMT table {
   margin-top: 20px;
@@ -1034,9 +1043,13 @@ body footer .enlaces {
   color: white;
   text-align: start;
   box-shadow: 1px 1px 10px black;
+  height: 35px;
 }
 #fechasFindeTMT .fechaTMT .flyersTMT table tr td img {
   width: 60%;
+}
+#fechasFindeTMT .fechaTMT .flyersTMT table tr .escudoFechasTMTs {
+  width: 100px;
 }
 #fechasFindeTMT .fechaTMT .flyersTMT table tr .categoriasTMTFinde {
   font-family: "Mate SC";

@@ -371,12 +371,15 @@ body {
                                 font-family: $afont;
                                 font-size: $defontsize;
                                 text-align: center;
+                                padding: 10px;
                             }
 
                             td {
                                 color: $ecolor;
                                 text-align: center;
-
+                                padding: 10px;
+                                width: 150px;
+                                
                                 .escudoClub {
                                     text-align: center;
                                 }
@@ -386,8 +389,13 @@ body {
                                 }
                             }
 
+                            .edadJugador{
+                                width: 70px;
+                            }
+
                             .escudoClub {
                                 text-align: center;
+                                width: 100px;
                             }
 
                             .nombreJugador {
@@ -396,6 +404,7 @@ body {
 
                             .nombreClub {
                                 text-align: start;
+                                width: 250px;
                             }
                         }
                     }
@@ -1371,6 +1380,7 @@ body {
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-bottom: 50px;
 
             table {
                 margin-top: 20px;
@@ -1383,10 +1393,15 @@ body {
                         color: $ecolor;
                         text-align: start;
                         box-shadow: 1px 1px 10px $fcolor;
+                        height: 35px;
 
                         img {
                             width: 60%
                         }
+                    }
+
+                    .escudoFechasTMTs{
+                        width: 100px;
                     }
 
                     .categoriasTMTFinde {
