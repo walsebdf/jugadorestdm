@@ -677,6 +677,25 @@ body footer .enlaces {
   width: 7%;
   margin-bottom: 20px;
 }
+.paginaSL .marcadores {
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+  box-shadow: 3px 3px 5px rgb(161, 47, 255);
+}
+.paginaSL .marcadoresInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 30px;
+}
+.paginaSL .marcadoresInicio .marcadores {
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+  box-shadow: 3px 3px 5px rgb(161, 47, 255);
+}
 .paginaSL .indicadorFecha {
   color: rgb(221, 15, 15);
   font-family: "Calligraffitti";
@@ -691,7 +710,7 @@ body footer .enlaces {
   justify-content: space-around;
   text-align: center;
   margin: 20px;
-  border-bottom: 3px solid rgb(221, 15, 15);
+  width: 95%;
 }
 .paginaSL .detalleFecha .escudoRdo img {
   width: 50%;
@@ -764,6 +783,9 @@ body footer .enlaces {
   width: 99%;
   margin: 20px;
 }
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl {
+  margin: 50px;
+}
 .paginaSL #tablaPlayoffSl .tablaPlayoffSl tr td {
   width: 80px;
   font-family: "Mate SC";
@@ -773,11 +795,18 @@ body footer .enlaces {
 .paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .separacion {
   height: 50px;
 }
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .rdoLlaveSL {
+  color: rgb(221, 15, 15);
+}
 .paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .scheduling {
   color: orange;
   text-align: center;
   border-left: 1px dashed orange;
   border-right: 1px dashed orange;
+}
+.paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .schedulingsb {
+  color: orange;
+  text-align: center;
 }
 .paginaSL #tablaPlayoffSl .tablaPlayoffSl tr .rightScheduling {
   border-right: 1px dashed orange;
@@ -837,6 +866,10 @@ body footer .enlaces {
   text-align: center;
   border-left: 1px dashed orange;
   border-right: 1px dashed orange;
+}
+.paginaSL #tablaPlayoffLde .tablaPlayoffLde .schedulingsb {
+  color: orange;
+  text-align: center;
 }
 .paginaSL #tablaPlayoffLde .tablaPlayoffLde .rightScheduling {
   border-right: 1px dashed orange;

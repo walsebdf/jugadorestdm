@@ -920,6 +920,29 @@ body {
         }
     }
 
+    .marcadores{
+        text-decoration: none;
+        color: $hcolor;
+        font-size: $efontsize;
+        box-shadow: 3px 3px 5px $acolor;
+        }
+
+    .marcadoresInicio{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin: 30px;
+
+        .marcadores{
+        text-decoration: none;
+        color: $hcolor;
+        font-size: $efontsize;
+        box-shadow: 3px 3px 5px $acolor;
+        }
+    }
+
     .indicadorFecha {
         color: $ccolor;
         font-family: $efont;
@@ -935,7 +958,7 @@ body {
         justify-content: space-around;
         text-align: center;
         margin: 20px;
-        border-bottom: 3px solid $ccolor;
+        width: 95%;
 
 
         .escudoRdo {
@@ -1031,6 +1054,8 @@ body {
 
         .tablaPlayoffSl {
 
+            margin: 50px;
+
             tr {
                 td {
                     width: 80px;
@@ -1043,11 +1068,20 @@ body {
                     height: 50px;
                 }
 
+                .rdoLlaveSL{
+                    color: $ccolor;
+                }
+
                 .scheduling{
                     color: $hcolor;
                     text-align: center;
                     border-left: 1px dashed $hcolor ;
                     border-right: 1px dashed $hcolor;
+                }
+
+                .schedulingsb{
+                    color: $hcolor;
+                    text-align: center;
                 }
 
                 .rightScheduling{
@@ -1123,6 +1157,11 @@ body {
                 text-align: center;
                 border-left: 1px dashed $hcolor ;
                 border-right: 1px dashed $hcolor;
+            }
+
+            .schedulingsb{
+                color: $hcolor;
+                text-align: center;
             }
 
             .rightScheduling{
