@@ -18,7 +18,7 @@ body header {
   transition: all 3s;
 }
 body header:hover {
-  background-image: url(../images/logo_chico.png);
+  background-image: url(../images/logo_chico_t80.png);
 }
 body header .nav-item {
   font-family: "Mate SC";
@@ -168,6 +168,9 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .itemResaltado {
   100% {
     box-shadow: 10px 10px 15px yellow;
   }
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .recuadrado {
+  border: 1px solid cyan;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a {
   text-decoration: none;
@@ -712,8 +715,17 @@ body footer .enlaces {
   margin: 20px;
   width: 95%;
 }
+.paginaSL .detalleFecha .escudoRdo {
+  width: 100px;
+}
 .paginaSL .detalleFecha .escudoRdo img {
   width: 50%;
+}
+.paginaSL .detalleFecha .nombreClubRdoSL {
+  width: 450px;
+}
+.paginaSL .detalleFecha .resultadoSL {
+  width: 50px;
 }
 .paginaSL .detalleFecha th {
   color: rgb(161, 47, 255);
@@ -900,6 +912,99 @@ body footer .enlaces {
   font-weight: bold;
   color: rgb(161, 47, 255);
   text-align: center;
+}
+.paginaSL #resumenSL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+.paginaSL #resumenSL .resumenSLAgrupado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .campeonSL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .campeonSL .tabladecampeon .campeonSLTitulo {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: orange;
+  text-shadow: 1px 1px white;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .campeonSL .tabladecampeon .campeonSLNombre {
+  font-family: "Righteous";
+  font-size: 40px;
+  color: rgb(161, 47, 255);
+  text-shadow: 3px 3px 3px rgb(221, 15, 15);
+  color: yellow;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes parpadeo {
+  0% {
+    text-shadow: 1px 1px 1px orange;
+    color: rgb(34, 159, 213);
+  }
+  50% {
+    text-shadow: 1px 1px 1px orange;
+    color: white;
+  }
+  100% {
+    text-shadow: 1px 1px 1px orange;
+    color: rgb(34, 159, 213);
+  }
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos .ascensosdescensosTitulo {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: green;
+  text-shadow: 1px 1px white;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos .ascensosdescensosTituloDescenso {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: rgb(221, 15, 15);
+  text-shadow: 1px 1px white;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos table .separacion {
+  height: 50px;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos .tabladeascensosydescensos tr .escudoClub {
+  text-align: end;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos .tabladeascensosydescensos tr .escudoClub img {
+  width: 50%;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .ascensosdescensos .tabladeascensosydescensos tr .nombreClub {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: white;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .miembrosProxSL .miembrosProxSLTitulo {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: cyan;
+  text-shadow: 1px 1px white;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .miembrosProxSL .tablaproxSL tr .escudoClub {
+  text-align: end;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .miembrosProxSL .tablaproxSL tr .escudoClub img {
+  width: 40%;
+}
+.paginaSL #resumenSL .resumenSLAgrupado .miembrosProxSL .tablaproxSL tr .nombreClub {
+  font-family: "Righteous";
+  font-size: 30px;
+  color: white;
+}
+.paginaSL #resumenSL .imagenPodios img {
+  width: 100%;
 }
 
 /*Paginas de SS*/
@@ -1202,6 +1307,9 @@ body footer .enlaces {
   }
   .paginaSL .detalleFecha tr .escudoRdo img {
     display: none;
+  }
+  .paginaSL #tablaPosSl .tablaPosSl {
+    margin: 10px;
   }
   .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
     text-align: start;
