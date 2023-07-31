@@ -173,6 +173,10 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a .itemResaltado {
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a .novedadesPagPrincCard {
   border: 1px solid rgb(34, 159, 213);
   margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc a .novedadesPagPrincCard p {
+  padding-top: 35px;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .botonesEnIndex {
   display: flex;
@@ -630,6 +634,25 @@ body #contenidoPagina #mesTMTsRdos .tablaMesTMTsRdos tr .refSemana {
 body #contenidoPagina #mesTMTsRdos .tablaMesTMTsRdos tr .refSemana a {
   text-decoration: none;
   color: orange;
+}
+body #contenidoPagina .leyendaTMTEstadisticas {
+  color: orange;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 100%;
+}
+body #contenidoPagina .actualizacionReporte {
+  color: black;
+  text-shadow: 2px 2px 15px white;
+}
+body #contenidoPagina #reporteLookerStudio {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 body footer {
   display: flex;
@@ -1140,6 +1163,7 @@ body footer .enlaces {
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 #fechasFindeTMT .fechaTMT {
   display: flex;

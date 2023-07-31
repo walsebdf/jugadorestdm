@@ -254,6 +254,11 @@ body {
                     .novedadesPagPrincCard {
                         border: 1px solid $bcolor;
                         margin: 20px;
+                        text-align: center;
+
+                        p{
+                            padding-top: 35px;
+                        }
                     }
                 }
 
@@ -859,6 +864,28 @@ body {
             }
 
 
+        }
+
+        .leyendaTMTEstadisticas{
+            color: $hcolor;
+            font-size: $defontsize;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 100%;
+        }
+
+        .actualizacionReporte{
+            color: $fcolor;
+            text-shadow: 2px 2px 15px $ecolor;
+        }
+
+        #reporteLookerStudio{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
         }
 
     }
@@ -1539,6 +1566,7 @@ body {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 
 
     .fechaTMT {
@@ -1746,6 +1774,7 @@ body {
 
 
             }
+
         }
 
     }
