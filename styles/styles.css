@@ -294,17 +294,32 @@ body #contenidoPagina #encabezadoIndex #quienesSomos {
   margin: 20px;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos .encabezadoIndexTitulo {
-  font-family: "Condiment";
-  font-size: 40px;
+  font-family: "Mate SC";
+  font-weight: bolder;
+  font-size: 25px;
   color: rgb(221, 15, 15);
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 body #contenidoPagina #encabezadoIndex #quienesSomos p {
-  font-family: "Righteous";
-  font-size: 20px;
+  font-family: "Mate SC";
+  font-size: 16px;
   color: white;
+}
+body #contenidoPagina #encabezadoIndex #quienesSomos ul li {
+  font-family: "Mate SC";
+  font-size: 16px;
+  color: white;
+}
+body #contenidoPagina .cafecito p {
+  font-family: "Mate SC";
+  font-size: 16px;
+  color: white;
+}
+body #contenidoPagina .cafecito .linkCafecito {
+  text-align: center;
+  padding-bottom: 20px;
 }
 body #contenidoPagina .rdosPaginaSS {
   display: flex;
@@ -643,6 +658,12 @@ body #contenidoPagina .leyendaTMTEstadisticas {
   text-align: center;
   line-height: 100%;
 }
+body #contenidoPagina .comoBuscarte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 25px;
+}
 body #contenidoPagina .actualizacionReporte {
   color: black;
   text-shadow: 2px 2px 15px white;
@@ -653,6 +674,9 @@ body #contenidoPagina #reporteLookerStudio {
   align-content: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
+}
+body #contenidoPagina #reporteLookerStudio iframe {
+  width: 90%;
 }
 body footer {
   display: flex;

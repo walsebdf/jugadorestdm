@@ -413,8 +413,9 @@ body {
                 margin: 20px;
 
                 .encabezadoIndexTitulo {
-                    font-family: $ifont;
-                    font-size: $cfontsize;
+                    font-family: $dfont;
+                    font-weight: bolder;
+                    font-size: $defontsize;
                     color: $ccolor;
                     padding-top: 20px;
                     padding-bottom: 20px;
@@ -422,12 +423,32 @@ body {
                 }
 
                 p {
-                    font-family: $afont;
-                    font-size: $efontsize;
+                    font-family: $dfont;
+                    font-size: $effontsize;
                     color: $ecolor;
+                }
+
+                ul{
+                    li{
+                        font-family: $dfont;
+                        font-size: $effontsize;
+                        color: $ecolor; 
+                    }
                 }
             }
 
+        }
+
+        .cafecito{
+            p{
+                font-family: $dfont;
+                font-size: $effontsize;
+                color: $ecolor; 
+            }
+            .linkCafecito{
+                text-align: center;
+                padding-bottom: 20px;
+            }
         }
 
         .rdosPaginaSS {
@@ -875,6 +896,13 @@ body {
             line-height: 100%;
         }
 
+        .comoBuscarte{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 25px;
+        }
+
         .actualizacionReporte{
             color: $fcolor;
             text-shadow: 2px 2px 15px $ecolor;
@@ -886,6 +914,11 @@ body {
             align-content: center;
             flex-wrap: wrap;
             padding-bottom: 50px;
+
+            iframe{
+                width: 90%;
+
+            }
         }
 
     }
