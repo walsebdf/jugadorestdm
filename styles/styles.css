@@ -1083,6 +1083,7 @@ body footer .enlaces {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
+  width: 100%;
 }
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr {
   font-family: "Mate SC";
@@ -1090,15 +1091,20 @@ body footer .enlaces {
   color: white;
   text-align: center;
 }
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr td {
+  width: 35px;
+}
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .nombreJugSS {
   font-family: "Mate SC";
   font-size: 20px;
   color: white;
   text-align: start;
+  width: 400px;
 }
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS {
   text-align: start;
   font-size: 16px;
+  width: 250px;
 }
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .escudoRdoSS img {
   width: 10%;
@@ -1109,6 +1115,7 @@ body footer .enlaces {
   font-weight: bold;
   color: rgb(221, 15, 15);
   text-align: center;
+  width: 50px;
 }
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .puntosGanadosRank {
   font-family: "Mate SC";

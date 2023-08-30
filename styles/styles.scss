@@ -1428,6 +1428,7 @@ body {
         flex-direction: column;
         width: 100%;
         align-content: center;
+        
 
         .rdosEspecialesSS {
 
@@ -1442,6 +1443,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            
 
 
             .nombreGrupoSS {
@@ -1458,6 +1460,8 @@ body {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 margin: 20px;
+                width: 100%;
+
 
                 tr {
 
@@ -1466,16 +1470,22 @@ body {
                     color: $ecolor;
                     text-align: center;
 
+                    td{
+                        width: 35px;
+                    }
+                    
                     .nombreJugSS {
                         font-family: $dfont;
                         font-size: $efontsize;
                         color: $ecolor;
                         text-align: start;
+                        width: 400px;
                     }
 
                     .escudoRdoSS {
                         text-align: start;
                         font-size: $effontsize;
+                        width: 250px;
 
                         img {
                             width: 10%;
@@ -1488,7 +1498,9 @@ body {
                         font-weight: bold;
                         color: $ccolor;
                         text-align: center;
+                        width: 50px;
                     }
+
 
                     .puntosGanadosRank {
                         font-family: $dfont;
