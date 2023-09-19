@@ -664,6 +664,16 @@ body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escud
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escudoClubJugador img {
   width: 35%;
 }
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .notaNivelRanking {
+  color: orange;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria ul {
+  align-self: start;
+  margin-left: 75px;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria ul li {
+  color: orange;
+}
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .mobileTable {
   visibility: hidden;
 }

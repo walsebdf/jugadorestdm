@@ -901,6 +901,18 @@ body {
 
                 }
 
+                .notaNivelRanking{
+                    color: $hcolor;
+                }
+
+                ul {
+                    align-self: start;
+                margin-left: 75px;
+                    li{
+                        color: $hcolor;
+                    }
+                }
+
                 .mobileTable {
                     visibility: hidden;
                 }
