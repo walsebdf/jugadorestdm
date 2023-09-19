@@ -118,49 +118,23 @@ body #contenidoPagina .slider .slide-track .slide .img {
     -webkit-transform: translateX(-3200px);
   }
 }
-body #contenidoPagina #encabezadoIndex .tituloEncabezado {
-  font-family: "Righteous";
-  color: orange;
-  margin-top: 20px;
-  font-size: 35px;
-  text-decoration: underline;
-}
 body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  border: 1px solid red;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 50%;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .jugActivos {
-  margin-top: 50px;
-  width: 100%;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .tmts {
-  padding: 30px 0 50px 0;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper {
-  width: 98%;
-  border: px solid greenyellow;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 250px;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper-slide img {
-  display: block;
-  width: 100%;
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard img {
+  margin: 20px;
+  width: 500px;
 }
 body #contenidoPagina #encabezadoIndex .anuncio {
   color: white;
@@ -186,13 +160,6 @@ body #contenidoPagina #encabezadoIndex .anuncio img {
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
   display: flex;
   flex-direction: column;
-}
-body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .titulo2Encabezado {
-  font-family: "Righteous";
-  color: orange;
-  margin-top: 20px;
-  font-size: 35px;
-  text-decoration: underline;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .itemResaltado {
   box-shadow: 10px 10px 15px yellow;
@@ -1352,17 +1319,6 @@ body footer .enlaces {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-  }
-  body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-  }
-  body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard {
-    width: 90%;
   }
   body #contenidoPagina #encabezadoIndex .eventos {
     grid-area: eventos;
