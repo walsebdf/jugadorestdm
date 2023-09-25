@@ -131,6 +131,7 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  border-bottom: 5px double orange;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard {
   display: flex;
@@ -142,25 +143,72 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard 
   margin-top: 50px;
   width: 100%;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .container {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tituloSecundarioEncabezado {
+  font-family: "Righteous";
+  color: orange;
+  margin-top: 20px;
+  font-size: 30px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .tmts {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider .tmts {
   padding: 30px 0 50px 0;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider .swiper {
   width: 98%;
-  border: px solid greenyellow;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper-slide {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 250px;
 }
-body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .swiper-slide img {
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSlider .swiper-slide img {
   display: block;
   width: 100%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad .tmts {
+  padding: 30px 0 50px 0;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad .swiper {
+  width: 98%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .tmtManualSliderEstad .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo p {
+  text-align: center;
+  color: orange;
+  font-family: "Mate SC";
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo p a {
+  color: white;
+  text-decoration: none;
 }
 body #contenidoPagina #encabezadoIndex .anuncio {
   color: white;
@@ -186,6 +234,7 @@ body #contenidoPagina #encabezadoIndex .anuncio img {
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc {
   display: flex;
   flex-direction: column;
+  border-bottom: 5px double orange;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .titulo2Encabezado {
   font-family: "Righteous";
@@ -636,12 +685,17 @@ body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .tituloAreaRdosTMTs {
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT {
   margin: 5px;
+  width: 95%;
+  border-bottom: 2px solid orange;
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT tr {
   font-size: 20px;
   color: white;
   font-family: "Mate SC";
   text-align: center;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT tr td {
+  padding: 10px;
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .tituloTablaRdosTMTs {
   font-size: 20px;
@@ -662,7 +716,7 @@ body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escud
   text-align: center;
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .convocatoriaTMT .escudoClubJugador img {
-  width: 35%;
+  width: 20%;
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .notaNivelRanking {
   color: orange;
@@ -676,6 +730,9 @@ body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria ul li {
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .mobileTable {
   visibility: hidden;
+}
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria p {
+  padding-top: 20px;
 }
 body #contenidoPagina #mesTMTsRdos {
   display: flex;
