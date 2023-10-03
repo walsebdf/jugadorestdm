@@ -676,6 +676,9 @@ body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria {
   align-items: center;
   width: 100%;
 }
+body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .clubesPresentes {
+  width: 50%;
+}
 body #contenidoPagina #cuerpoPaginaRdosTMT .convocatoria .tituloAreaRdosTMTs {
   font-size: 30px;
   color: orange;
