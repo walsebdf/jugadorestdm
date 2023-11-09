@@ -142,6 +142,12 @@ body {
             padding-bottom: 20px;
         }
 
+        .nota_al_lector{
+            color: $jcolor;
+            text-align: center;
+            text-shadow: -10px 1px 5px $ccolor;
+        }
+
         .slider {
             width: 100%;
             height: auto;
@@ -420,6 +426,14 @@ body {
                     color: $hcolor;
                     font-family: $afont;
                     margin: 20px;
+                }
+
+                .novedadesPagPrincTituloAvisos{
+                    text-align: center;
+                    color: $ccolor;
+                    font-family: $afont;
+                    margin: 20px;  
+                    text-shadow: 0px 0px 20px $ecolor;
                 }
 
                 p {
@@ -1147,6 +1161,15 @@ body {
         width: 100%;
         margin: 30px;
 
+        .zona_marcadores{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+        }
+
         .marcadores {
             text-decoration: none;
             color: $hcolor;
@@ -1249,6 +1272,10 @@ body {
                     padding-left: 10px;
                     padding-right: 10px;
                     border: 1px solid $ecolor
+                }
+
+                .ldetd{
+                    width: 75px;
                 }
 
                 .escudoRdo {

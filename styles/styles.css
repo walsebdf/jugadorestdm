@@ -88,6 +88,11 @@ body #contenidoPagina #subtituloBdePagina {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+body #contenidoPagina .nota_al_lector {
+  color: yellow;
+  text-align: center;
+  text-shadow: -10px 1px 5px rgb(221, 15, 15);
+}
 body #contenidoPagina .slider {
   width: 100%;
   height: auto;
@@ -297,6 +302,13 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincTitu
   color: orange;
   font-family: "Righteous";
   margin: 20px;
+}
+body #contenidoPagina #encabezadoIndex .novedadesPagPrinc .novedadesPagPrincTituloAvisos {
+  text-align: center;
+  color: rgb(221, 15, 15);
+  font-family: "Righteous";
+  margin: 20px;
+  text-shadow: 0px 0px 20px white;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrinc p {
   text-align: center;
@@ -851,6 +863,14 @@ body footer .enlaces {
   width: 100%;
   margin: 30px;
 }
+.paginaSL .marcadoresInicio .zona_marcadores {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
 .paginaSL .marcadoresInicio .marcadores {
   text-decoration: none;
   color: orange;
@@ -936,6 +956,9 @@ body footer .enlaces {
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid white;
+}
+.paginaSL #tablaPosSl .tablaPosSl tr .ldetd {
+  width: 75px;
 }
 .paginaSL #tablaPosSl .tablaPosSl tr .escudoRdo {
   text-align: start;
