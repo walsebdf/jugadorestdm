@@ -213,6 +213,7 @@ body {
                     flex-direction: column;
                     align-items: center;
                     width: 45%;
+                    padding-bottom: 35px;
 
                     .jugActivos {
                         margin-top: 50px;
@@ -619,16 +620,31 @@ body {
                 flex-wrap: wrap;
                 margin: 20px;
 
-                a {
+                .fechasInterescuelas {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-around;
                     justify-items: center;
                     width: 50%;
+                    align-items: center;
 
                     img {
+                        display: flex;
+                        flex-direction: row;
                         width: 50%;
-                        align-content: center;
                         margin: 20px;
+                    }
+
+                    .fechasInterescuelasLinks{
+                        width: 40%;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        a{
+                            text-decoration: none;
+                            font-family: $cfont;
+                            font-size: $dfontsize;
+                        }
                     }
 
                 }

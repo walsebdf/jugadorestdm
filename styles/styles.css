@@ -143,6 +143,7 @@ body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard 
   flex-direction: column;
   align-items: center;
   width: 45%;
+  padding-bottom: 35px;
 }
 body #contenidoPagina #encabezadoIndex .novedadesPagPrincFijo .fijoPagPrincCard .jugActivos {
   margin-top: 50px;
@@ -451,16 +452,29 @@ body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat {
   flex-wrap: wrap;
   margin: 20px;
 }
-body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a {
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   justify-items: center;
   width: 50%;
+  align-items: center;
 }
-body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas img {
+  display: flex;
+  flex-direction: row;
   width: 50%;
-  align-content: center;
   margin: 20px;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas .fechasInterescuelasLinks {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas .fechasInterescuelasLinks a {
+  text-decoration: none;
+  font-family: "Courgette";
+  font-size: 30px;
 }
 body #contenidoPagina .infoRelevada {
   font-size: 35px;
