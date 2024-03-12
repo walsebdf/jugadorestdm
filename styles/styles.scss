@@ -603,7 +603,9 @@ body {
         .rdosPaginaSS {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
 
 
             .subtituloRdosSS {
@@ -616,9 +618,25 @@ body {
             .rdosPaginaSSCat {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
                 flex-wrap: wrap;
-                margin: 20px;
+                justify-content: center;
+                width: 75%;
+                align-content: flex-start;
+                align-items: flex-start;
+       
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    width: 30%;
+                    justify-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    img{
+                        width: 50%;
+                        align-items: center;
+                    }
+                }
 
                 .fechasInterescuelas {
                     display: flex;
@@ -636,14 +654,15 @@ body {
                     }
 
                     .fechasInterescuelasLinks{
-                        width: 40%;
+                        width: 50%;
                         display: flex;
                         justify-content: space-between;
                         
                         a{
                             text-decoration: none;
                             font-family: $cfont;
-                            font-size: $dfontsize;
+                            font-size: $defontsize;
+                            text-align: center;
                         }
                     }
 

@@ -437,7 +437,9 @@ body #contenidoPagina .cafecito .linkCafecito {
 body #contenidoPagina .rdosPaginaSS {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 body #contenidoPagina .rdosPaginaSS .subtituloRdosSS {
   font-family: "Righteous";
@@ -448,9 +450,24 @@ body #contenidoPagina .rdosPaginaSS .subtituloRdosSS {
 body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 20px;
+  justify-content: center;
+  width: 75%;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 30%;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat a img {
+  width: 50%;
+  align-items: center;
 }
 body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas {
   display: flex;
@@ -467,14 +484,15 @@ body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas img {
   margin: 20px;
 }
 body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas .fechasInterescuelasLinks {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
 body #contenidoPagina .rdosPaginaSS .rdosPaginaSSCat .fechasInterescuelas .fechasInterescuelasLinks a {
   text-decoration: none;
   font-family: "Courgette";
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 body #contenidoPagina .infoRelevada {
   font-size: 35px;
