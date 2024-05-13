@@ -56,6 +56,8 @@ body header .opcionNovedad {
 }
 body #contenidoPagina {
   /*Pagina de Rdos de TMT*/
+  /* REVISAR FORMATO Y CERRAR*/
+  /*HASTA ACA*/
 }
 body #contenidoPagina .banner img {
   width: 100%;
@@ -500,6 +502,101 @@ body #contenidoPagina .infoRelevada {
   text-shadow: -5px -5px 10px white;
   font-family: "Righteous";
   margin: 20px;
+}
+body #contenidoPagina #estadisticasSS div {
+  padding-top: 20px;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .areatablasdepuntos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tituloAreaRdosSS {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS {
+  margin: 30px;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS .tituloTablaRdosSS {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS .nombreJugadorRdosSS {
+  font-size: 16px;
+  font-weight: bolder;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS .puntosGanadosSS {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS .escudoClubJugador {
+  text-align: end;
+}
+body #contenidoPagina #estadisticasSS .jugmaspuntosSS .tablaPuntosGanadosSS .escudoClubJugador img {
+  width: 35%;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .areatablasdepuntosclubes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tituloAreaRdosSS {
+  font-size: 30px;
+  color: orange;
+  font-family: "Righteous";
+  margin: 20px;
+  text-align: center;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS {
+  margin: 30px;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS tr {
+  font-size: 12px;
+  color: white;
+  font-family: "Mate SC";
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS .tituloTablaRdosSS {
+  font-size: 20px;
+  color: rgb(161, 47, 255);
+  font-family: "Mate SC";
+  text-align: center;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS .nombreClubSS {
+  font-size: 20px;
+  font-weight: bolder;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS .puntosGanadosSS {
+  text-align: center;
+  font-size: 16px;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS .escudoClubJugador {
+  text-align: center;
+}
+body #contenidoPagina #estadisticasSS .clubmaspuntos .tablaClubMasPuntosSS .escudoClubJugador img {
+  width: 35%;
 }
 body #contenidoPagina #cuerpoPaginaRdosTMT div {
   padding-top: 20px;
@@ -1293,12 +1390,21 @@ body footer .enlaces {
   text-align: center;
   width: 50px;
 }
+.paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .raiting {
+  font-family: "Mate SC";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(161, 47, 255);
+  text-align: center;
+  padding-right: 40px;
+}
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS tr .puntosGanadosRank {
   font-family: "Mate SC";
   font-size: 20px;
   font-weight: bold;
   color: rgb(34, 159, 213);
   text-align: center;
+  padding-left: 40px;
 }
 .paginaRdosSS .rdosSSGeneral .cardRdoSS .rdosSS .matchSS {
   border-bottom: 1px solid rgb(34, 159, 213);

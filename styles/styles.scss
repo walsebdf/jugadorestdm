@@ -681,7 +681,136 @@ body {
             font-family: $afont;
             margin: 20px;
         }
+/* REVISAR FORMATO Y CERRAR*/
 
+#estadisticasSS {
+
+
+    div {
+        padding-top: 20px;
+    }
+
+
+    .jugmaspuntosSS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .areatablasdepuntos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tituloAreaRdosSS {
+            font-size: $dfontsize;
+            color: $hcolor;
+            font-family: $afont;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .tablaPuntosGanadosSS {
+
+            margin: 30px;
+
+            tr {
+                font-size: $ffontsize;
+                color: $ecolor;
+                font-family: $dfont;
+            }
+
+            .tituloTablaRdosSS {
+                font-size: $efontsize;
+                color: $acolor;
+                font-family: $dfont;
+                text-align: center;
+            }
+
+            .nombreJugadorRdosSS {
+                font-size: $effontsize;
+                font-weight: bolder;
+            }
+
+            .puntosGanadosSS{
+                text-align: center;
+                font-size: $effontsize;
+            }
+
+            .escudoClubJugador {
+                text-align: end;
+
+                img {
+                    width: 35%;
+                }
+
+            }
+
+
+        }
+    }
+
+    .clubmaspuntos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .areatablasdepuntosclubes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tituloAreaRdosSS {
+            font-size: $dfontsize;
+            color: $hcolor;
+            font-family: $afont;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .tablaClubMasPuntosSS {
+            margin: 30px;
+
+            tr {
+                font-size: $ffontsize;
+                color: $ecolor;
+                font-family: $dfont;
+            }
+
+            .tituloTablaRdosSS {
+                font-size: $efontsize;
+                color: $acolor;
+                font-family: $dfont;
+                text-align: center;
+            }
+
+            .nombreClubSS {
+                font-size: $efontsize;
+                font-weight: bolder;
+            }
+
+            .puntosGanadosSS {
+                text-align: center;
+                font-size: $effontsize;
+            }
+
+            .escudoClubJugador {
+                text-align: center;
+
+                img {
+                    width: 35%;
+                }
+
+            }
+        }
+    }
+
+}
+
+/*HASTA ACA*/
         #cuerpoPaginaRdosTMT {
 
 
@@ -1726,6 +1855,14 @@ body {
                         width: 50px;
                     }
 
+                    .raiting {
+                        font-family: $dfont;
+                        font-size: $efontsize;
+                        font-weight: bold;
+                        color: $acolor;
+                        text-align: center;
+                        padding-right: 40px;
+                    }
 
                     .puntosGanadosRank {
                         font-family: $dfont;
@@ -1733,6 +1870,7 @@ body {
                         font-weight: bold;
                         color: $bcolor;
                         text-align: center;
+                        padding-left: 40px;
                     }
                 }
 
